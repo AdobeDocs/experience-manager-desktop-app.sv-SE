@@ -2,16 +2,16 @@
 title: Bästa tillvägagångssätt för och felsökning [!DNL Adobe Experience Manager] datorprogram
 description: Följ bästa praxis och felsök för att lösa tillfälliga problem som rör installation, uppgradering, konfiguration och så vidare.
 exl-id: f388e4ac-907d-4093-ba6f-86ecdafeb015
-source-git-commit: df5283f6bef6adbb007bf93c6dabb3b12e430f58
+source-git-commit: 5676e7ece8bb43f051dae72d17e15ab1c34caefc
 workflow-type: tm+mt
-source-wordcount: '2260'
+source-wordcount: '2275'
 ht-degree: 0%
 
 ---
 
 # Felsökning [!DNL Adobe Experience Manager] datorprogram {#troubleshoot-v2}
 
-[!DNL Adobe Experience Manager] datorprogrammet ansluter till en [!DNL Experience Manager] DAM-databasen (Digital Asset Management). Appen hämtar databasinformation och sökresultat på din dator, hämtar och överför filer och mappar och innehåller funktioner för att hantera konflikter med Assets-användargränssnittet.
+[!DNL Adobe Experience Manager] datorprogrammet ansluter till en [!DNL Experience Manager] DAM-databasen (Digital Asset Management). Appen hämtar databasinformation och sökresultat på din dator, hämtar och överför filer och mappar samt innehåller funktioner för att hantera konflikter med Assets användargränssnitt.
 
 Läs vidare för att felsöka appen, lära dig de bästa metoderna och ta reda på begränsningarna.
 
@@ -19,41 +19,41 @@ Läs vidare för att felsöka appen, lära dig de bästa metoderna och ta reda p
 
 Följ följande metodtips för att förebygga vissa vanliga problem och felsökning.
 
-* **Förstå hur datorprogrammet fungerar**: Innan du börjar använda programmet bör du ägna en stund åt att veta hur programmet fungerar. Lär dig mer om länkar mellan [!DNL Experience Manager] webbgränssnitt och datorer, databasmappning, resurscachning, spara lokalt och ladda upp i bakgrunden. Se [hur det fungerar](release-notes.md#how-app-works).
+* **Förstå hur datorprogrammet fungerar**: Innan du börjar använda programmet bör du ägna en stund åt att veta hur programmet fungerar. Lär dig mer om länkar mellan [!DNL Experience Manager] webbgränssnitt och skrivbordet, databasmappning, resurscachning, spara lokalt och ladda upp i bakgrunden. Se [hur det fungerar](release-notes.md#how-app-works).
 
-* **Undvik tecken som inte stöds i mappnamn**: Använd inte blanksteg eller ogiltiga tecken när du skapar eller överför mappar. Se en lista med tecken på [Skapa mappar i [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#creating-folders). Några [!DNL Experience Manager] fall kan påverkas av tecken som inte stöds i mappnamnet.
+* **Undvik tecken som inte stöds i mappnamn**: Använd inte blanksteg eller ogiltiga tecken när du skapar eller överför mappar. Se en lista med tecken på [Skapa mappar i [!DNL Adobe Experience Manager Assets]](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/manage-assets#creating-folders). Tecken som inte stöds i mappnamnet kan påverka vissa [!DNL Experience Manager] användningsfall.
 
-* **Bästa tillvägagångssätt för att undvika konflikter**: Information om hur du undviker potentiella konflikter när du samarbetar med flera resurser finns i [undvika redigeringskonflikter](using.md#adv-workflow-collaborate-avoid-conflicts).
+* **Bästa tillvägagångssätt för att undvika konflikter**: Om du vill undvika potentiella konflikter när du samarbetar med flera resurser går du till [undvika redigeringskonflikter](using.md#adv-workflow-collaborate-avoid-conflicts).
 
-* **Använd mappöverföring för stora, hierarkiska mappar**: I stället för att använda webbgränssnittet Resurser eller andra metoder använder du [!DNL Experience Manager] för att överföra stora mappar. Programmet överför resurserna i bakgrunden med loggning och övervakning. Se [massöverföring av resurser](using.md#bulk-upload-assets).
+* **Använd mappöverföring för stora, hierarkiska mappar**: I stället för att använda Assets webbgränssnitt eller andra metoder använder du [!DNL Experience Manager] för att överföra stora mappar. Programmet överför resurserna i bakgrunden med loggning och övervakning. Se [massöverföring av resurser](using.md#bulk-upload-assets).
 
-* **Använd den senaste versionen**: Använd den senaste programversionen och kontrollera alltid om den är kompatibel innan du installerar en ny programversion eller innan du uppgraderar till en nyare [!DNL Experience Manager] version. Se [versionsinformation](release-notes.md).
+* **Använd den senaste versionen**: Använd den senaste programversionen. Kontrollera alltid om det finns kompatibilitet innan du installerar en ny programversion eller innan du uppgraderar till en nyare [!DNL Experience Manager] version. Se [versionsinformation](release-notes.md).
 
-* **Använd samma enhetsbeteckning**: Använd samma enhetsbeteckning i en organisation för att mappa till [!DNL Experience Manager] DAM. Om du vill visa resurser som placerats av andra användare måste sökvägarna vara desamma. Om du använder samma enhetsbeteckning säkerställs en konstant sökväg till DAM-resurser. Resurserna förblir placerade och tas inte bort även om olika enhetsbeteckningar används av olika användare.
+* **Använd samma enhetsbeteckning**: Använd samma enhetsbeteckning i hela organisationen för att mappa till [!DNL Experience Manager] DAM. Om du vill visa resurser som placerats av andra användare måste sökvägarna vara desamma. Om du använder samma enhetsbeteckning säkerställs en konstant sökväg till DAM-resurser. Resurserna förblir placerade och tas inte bort även om olika enhetsbeteckningar används av olika användare.
 
-* **Lägg märke till nätverket**: Nätverksprestanda är avgörande för [!DNL Experience Manager] datorprogrammets prestanda. Om du får ett långsammare svar på filöverföringar eller större åtgärder inaktiverar du de funktioner eller program som kan orsaka mycket nätverkstrafik.
+* **Lägg märke till nätverket**: Nätverksprestanda är avgörande för [!DNL Experience Manager] datorprogrammets prestanda. Om du får ett långsammare svar på filöverföringar eller gruppåtgärder inaktiverar du de funktioner eller program som kan orsaka mycket nätverkstrafik.
 
-* **Användningsexempel som inte stöds för datorprogrammet**: Använd inte appen för Assets&#39; migrering (den kräver planering och andra verktyg). för krävande DAM-åtgärder (som att flytta stora mappar, stora överföringar, hitta filer med avancerade metadatasökningar), och som en synkroniseringsklient (designprinciper och användningsmönster skiljer sig från synkroniserade klienter som Microsoft OneDrive eller Adobe Creative Cloud desktop sync).
+* **Användningsexempel som inte stöds för datorprogrammet**: Undvik att använda appen för resursmigrering eftersom den kräver planering och ytterligare verktyg. Den är inte heller lämplig för krävande DAM-åtgärder, som att flytta stora mappar, stora överföringar eller avancerade metadatasökningar. Använd den inte heller som synkroniseringsklient eftersom dess designprinciper och användningsmönster skiljer sig från synkroniseringsklienter som Microsoft OneDrive eller Adobe Creative Cloud desktop sync.
 
-* **Timeout**: För närvarande har skrivbordsprogrammet inte något konfigurerbart timeout-värde som kopplar från anslutningen mellan [!DNL Experience Manager] efter ett fast tidsintervall. När du överför stora resurser, och anslutningen får timeout efter en stund, försöker programmet överföra resursen några gånger genom att öka tidsgränsen för överföring. Det finns inget rekommenderat sätt att ändra standardinställningarna för timeout.
+* **Timeout**: För närvarande har skrivbordsprogrammet inte ett konfigurerbart timeout-värde som kopplar från anslutningen mellan [!DNL Experience Manager] efter ett fast tidsintervall. När du överför stora resurser, och anslutningen får timeout efter en stund, försöker programmet överföra resursen några gånger genom att öka tidsgränsen för överföring. Det finns inget rekommenderat sätt att ändra standardinställningarna för timeout.
 
 ## Felsöka {#troubleshooting-prep}
 
-Om du vill felsöka problem med skrivbordsprogram bör du känna till följande information. Ni kan också bättre informera Adobe kundsupport om ni väljer att söka support.
+Om du vill felsöka problem med skrivbordsprogram bör du känna till följande information. Där kan du också förmedla problemen bättre till Adobe kundsupport om du väljer att söka support.
 
 ### Plats för loggfiler {#check-log-files-v2}
 
-[!DNL Experience Manager] loggfilerna sparas på följande platser beroende på operativsystemet:
+The [!DNL Experience Manager] loggfilerna sparas på följande platser beroende på operativsystemet:
 
 I Windows: `%LocalAppData%\Adobe\AssetsCompanion\Logs`
 
 På Mac: `~/Library/Logs/Adobe\ Experience\ Manager\ Desktop`
 
-Om det inte går att överföra vissa filer när du överför många resurser finns mer information i `backend.log` för att identifiera misslyckade överföringar.
+Om det inte går att överföra vissa filer när du överför många resurser, se `backend.log` för att identifiera misslyckade överföringar.
 
 >[!NOTE]
 >
->När du arbetar med Adobe kundsupport på en supportförfrågan eller ett supportärende kan du bli ombedd att dela loggfilerna för att hjälpa kundsupportteamet att förstå problemet. Arkivera hela `Logs` och dela den med kundsupporten.
+>När du arbetar med Adobe kundsupport på en supportförfrågan eller ett supportärende kan du bli ombedd att dela loggfilerna för att hjälpa kundsupport att förstå problemet. Arkivera hela `Logs` och dela den med kundsupporten.
 
 ### Ändra detaljnivå i loggfiler {#level-of-details-in-log}
 
@@ -121,17 +121,17 @@ Så här ser du versionsnumret:
 
 Utför följande steg:
 
-1. Starta programmet och anslut [!DNL Experience Manager] -instans.
+1. Starta programmet och ansluta till en instans av [!DNL Experience Manager].
 
 1. Öppna programmets inställningar genom att klicka på ellipserna i det övre högra hörnet och välja [!UICONTROL Preferences].
 
-1. Leta reda på posten som visar [!UICONTROL Current Cache Size]. Klicka på papperskorgsikonen bredvid det här elementet.
+1. Leta reda på posten som visar [!UICONTROL Current Cache Size]. Klicka på papperskorgsikonen bredvid elementet.
 
-Om du vill rensa cachen manuellt fortsätter du med stegen nedan.
+Så här rensar du cacheminnet manuellt:
 
 >[!CAUTION]
 >
->Detta kan vara en destruktiv åtgärd. Om det finns lokala filändringar som inte har överförts till [!DNL Adobe Experience Manager]kommer dessa ändringar att gå förlorade om du fortsätter.
+>Dessa steg kan vara destruktiva. Om lokala filändringar inte har överförts till [!DNL Adobe Experience Manager], försvinner de ändringarna.
 
 Cacheminnet rensas genom att programmets cachekatalog, som finns i programmets inställningar, tas bort.
 
@@ -141,7 +141,7 @@ Cacheminnet rensas genom att programmets cachekatalog, som finns i programmets i
 
 1. Anteckna [!UICONTROL Cache Directory] värde.
 
-   I den här katalogen finns det underkataloger namngivna efter den kodade [!DNL Adobe Experience Manager] Slutpunkter. Namnen är en kodad version av målversionen [!DNL Adobe Experience Manager] URL. Om programmet till exempel har som mål `localhost:4502` så blir katalognamnet `localhost_4502`.
+   I den här katalogen finns det underkataloger namngivna efter den kodade [!DNL Adobe Experience Manager] Slutpunkter. Namnen är en kodad version av målversionen [!DNL Adobe Experience Manager] URL. Om programmet till exempel har som mål `localhost:4502`, är katalognamnet `localhost_4502`.
 
 Om du vill rensa cachen tar du bort den kodade [!DNL Adobe Experience Manager] Slutpunktskatalog. Om du tar bort hela katalogen som anges i inställningarna rensas cachen för alla instanser som har använts av programmet.
 
@@ -161,13 +161,13 @@ Om du inte kan se de resurser som du eller andra kreatörer har placerat i suppo
 
 ### Redigeringar av filer i datorprogrammets användargränssnitt återspeglas inte i [!DNL Adobe Experience Manager] omedelbart {#changes-on-da-not-visible-on-aem}
 
-[!DNL Adobe Experience Manager] när alla redigeringar av en fil är slutförda. Beroende på filens storlek och komplexitet tar det lång tid att överföra den nya versionen av filen tillbaka till [!DNL Adobe Experience Manager]. Programdesignen kräver att så många gånger som en fil överförs fram och tillbaka ska minimeras, i stället för att gissa när redigeringarna är klara och överförs automatiskt. Vi rekommenderar att användaren initierar överföringen av filen tillbaka till [!DNL Adobe Experience Manager] genom att välja att överföra en fils ändringar.
+[!DNL Adobe Experience Manager] när alla redigeringar av en fil är slutförda. Beroende på filens storlek och komplexitet tar det lång tid att överföra den nya versionen av filen tillbaka till [!DNL Adobe Experience Manager]. Programmet är utformat för att minimera antalet filöverföringar, i stället för att automatiskt överföra filer baserat på gissad redigering. Vi rekommenderar att användaren initierar överföringen av filen tillbaka till [!DNL Adobe Experience Manager] genom att välja att överföra en fils ändringar.
 
 ### Problem vid uppgradering till macOS {#issues-when-upgrading-on-macos}
 
-Ibland kan problem uppstå vid uppgradering [!DNL Experience Manager] datorprogram på macOS. Detta orsakas av en äldre systemmapp för [!DNL Experience Manager] datorprogram förhindrar nya versioner av [!DNL Experience Manager] för att läsas in korrekt. Följande mappar och filer kan tas bort manuellt för att åtgärda problemet.
+Ibland kan problem uppstå vid uppgradering av [!DNL Experience Manager] datorprogram på macOS. Äldre systemmappar för [!DNL Experience Manager] datorprogrammet orsakar dessa problem. Mapparna förhindrar nya versioner av [!DNL Experience Manager] för att läsas in korrekt. Följande mappar och filer kan tas bort manuellt för att åtgärda problemet.
 
-Innan du utför följande steg drar du `Adobe Experience Manager Desktop` från macOS-programmappen till papperskorgen. Öppna sedan terminalen, kör följande kommando och ange ditt lösenord när du uppmanas till det.
+Innan du kör följande steg drar du `Adobe Experience Manager Desktop` från macOS-programmappen till papperskorgen. Öppna sedan terminalen, kör följande kommando och ange ditt lösenord när du uppmanas till det.
 
 ```shell
 sudo rm -rf ~/Library/Application\ Support/com.adobe.aem.desktop
@@ -178,17 +178,17 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop" | xargs rm -rf
 sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-plugin" | xargs rm -rf
 ```
 
-## Kan inte överföra filer {#upload-fails}
+## Det går inte att överföra filer {#upload-fails}
 
 Om du använder datorprogrammet med [!DNL Experience Manager] 6.5.1 eller senare, uppgradera S3- eller Azure-anslutning till version 1.10.4 eller senare. Det åtgärdar ett problem med filöverföringsfel relaterat till [OAK-8599](https://issues.apache.org/jira/browse/OAK-8599). Se [installationsanvisningar](install-upgrade.md#install-v2).
 
 ## [!DNL Experience Manager] anslutningsproblem för skrivbordsprogram {#connection-issues}
 
-Om du har problem med allmänna anslutningsmöjligheter kan du få mer information om vad [!DNL Experience Manager] det går för skrivbordsappen.
+Om du har problem med allmänna anslutningsmöjligheter kan du få mer information om vilka [!DNL Experience Manager] det går för skrivbordsappen.
 
 **Kontrollera begärandeloggen**
 
-[!DNL Experience Manager] skrivbordsappen loggar alla begäranden som skickas, tillsammans med varje begärandes svarskod, i en dedikerad loggfil.
+The [!DNL Experience Manager] skrivbordsappen loggar alla begäranden som skickas, tillsammans med varje begärandes svarskod, i en dedikerad loggfil.
 
 1. Öppna `request.log` i programmets loggkatalog för att se dessa begäranden.
 
@@ -203,7 +203,7 @@ Se [SAML-avsnitt](#da-connection-issue-with-saml-aem) om du vill ha anvisningar 
 
 [!DNL Experience Manager] skrivbordsappen kan inte ansluta till din SSO-aktiverade (SAML) [!DNL Adobe Experience Manager] distribution. Programmets design används för att anpassa variationerna och komplexiteten i SSO-anslutningar och processer. En installation kan dock kräva ytterligare felsökning.
 
-Ibland dirigeras SAML-processen inte tillbaka till den ursprungligen begärda sökvägen eller så är den slutliga omdirigeringen till en annan värd än den som konfigurerats i [!DNL Adobe Experience Manager] datorprogram. Så här kontrollerar du att så inte är fallet:
+Ibland dirigeras SAML-processen inte tillbaka till den ursprungligen begärda sökvägen. Eller så är den slutliga omdirigeringen till en annan värd än den som konfigurerats i [!DNL Adobe Experience Manager] datorprogram. Så här kontrollerar du att detta problem inte är fallet:
 
 1. Öppna en webbläsare. Åtkomst `https://[aem_server]:[port]/content/dam.json` URL.
 
@@ -215,7 +215,7 @@ Ibland dirigeras SAML-processen inte tillbaka till den ursprungligen begärda s�
 
 **SAML-inloggningsprocessen fungerar korrekt enligt ovanstående steg, men användarna kan fortfarande inte logga in**
 
-Fönstret inuti [!DNL Adobe Experience Manager] datorprogrammet som visar inloggningsprocessen är helt enkelt en webbläsare som visar målet [!DNL Adobe Experience Manager] instansens webbanvändargränssnitt:
+Fönstret i [!DNL Adobe Experience Manager] datorprogrammet som visar inloggningsprocessen är helt enkelt en webbläsare som visar målet [!DNL Adobe Experience Manager] instansens webbanvändargränssnitt:
 
 * I Mac-versionen används en [WebView](https://developer.apple.com/documentation/webkit/webview).
 
@@ -229,17 +229,17 @@ Om du vill felsöka ytterligare kan du visa de exakta URL:er som webbläsaren f�
 
 1. Återskapa inloggningsförsöket.
 
-1. Navigera till [loggkatalog](#check-log-files-v2) av programmet
+1. Navigera till [loggkatalog](#check-log-files-v2) av programmet.
 
 1. För Windows:
 
-   1. Öppna&quot;aemcompanionlog.txt&quot;.
+   1. Öppna&quot;aemcompanionlog.txt.&quot;
 
-   1. Sök efter meddelanden som börjar med &quot;Inloggningsläsarens adress ändrad till&quot;. Dessa poster innehåller även den URL som programmet har läst in.
+   1. Sök efter meddelanden som börjar med &quot;Inloggningsläsarens adress har ändrats till&quot;. Dessa poster innehåller även den URL som programmet har läst in.
 
    För Mac:
 
-   1. `com.adobe.aem.desktop-nnnnnnnn-nnnnnn.log`, där **n** ersätts med de tal som finns i det senaste filnamnet.
+   1. I `com.adobe.aem.desktop-nnnnnnnn-nnnnnn.log`, det som finns i det senaste filnamnet ersätter **n**.
 
    1. Sök efter meddelanden som börjar med&quot;inläst bildruta&quot;. Dessa poster innehåller även den URL som programmet har läst in.
 
@@ -247,13 +247,13 @@ Om du tittar på den URL-sekvens som läses in kan det hjälpa till att felsöka
 
 ### SSL-konfigurationsproblem {#ssl-config-v2}
 
-Biblioteken som [!DNL Experience Manager] datorprogram som använder för HTTP-kommunikation använder strikt SSL-kontroll. Ibland kan en anslutning fungera med en webbläsare, men misslyckas med att använda [!DNL Experience Manager] datorprogram. Installera det saknade mellanliggande certifikatet i Apache om du vill konfigurera SSL korrekt. Se [Installera ett mellanliggande CA-certifikat i Apache](https://access.redhat.com/solutions/43575).
+Biblioteken som [!DNL Experience Manager] datorprogrammet använder för HTTP-kommunikation med strikt SSL-kontroll. Ibland kan en anslutning fungera med en webbläsare, men misslyckas när du använder [!DNL Experience Manager] datorprogram. Installera det saknade mellanliggande certifikatet i Apache om du vill konfigurera SSL korrekt. Se [Installera ett mellanliggande CA-certifikat i Apache](https://access.redhat.com/solutions/43575).
 
-Biblioteken som [!DNL Experience Manager] datorprogrammet använder för HTTP-kommunikation med strikt SSL-kontroll. Det kan därför finnas tillfällen då SSL-anslutningar som lyckas via en webbläsare misslyckas med [!DNL Adobe Experience Manager] datorprogram. Detta är bra eftersom det uppmuntrar till korrekt konfigurering av SSL och ökar säkerheten, men det kan vara frustrerande när programmet inte kan ansluta.
+Biblioteken som [!DNL Experience Manager] datorprogrammet använder för HTTP-kommunikation med strikt SSL-kontroll. Det kan alltså finnas tillfällen då SSL-anslutningar som lyckas via en webbläsare misslyckas med [!DNL Adobe Experience Manager] datorprogram. Resultatet är bra eftersom det uppmuntrar till korrekt konfigurering av SSL och ökar säkerheten, men det kan vara frustrerande när programmet inte kan ansluta.
 
-I det här fallet rekommenderar vi att du använder ett verktyg för att analysera serverns SSL-certifikat och identifiera problem så att de kan korrigeras. Det finns webbplatser som inspekterar serverns certifikat när de tillhandahåller URL:en.
+I det här fallet rekommenderar vi att du använder ett verktyg för att analysera serverns SSL-certifikat och identifiera problem så att de kan korrigeras. Det finns webbplatser som inspekterar serverns certifikat genom att ange dess URL.
 
-Som en tillfällig åtgärd är det möjligt att inaktivera strikta SSL-kontroller i [!DNL Adobe Experience Manager] datorprogram. Detta är inte en rekommenderad långsiktig lösning eftersom den minskar säkerheten genom att dölja grundorsaken till felaktigt konfigurerad SSL. Så här inaktiverar du strikt tvingande:
+Som en tillfällig åtgärd är det möjligt att inaktivera strikta SSL-kontroller i [!DNL Adobe Experience Manager] datorprogram. Detta tillvägagångssätt är inte en rekommenderad långsiktig lösning, eftersom det minskar säkerheten genom att dölja grundorsaken till felaktigt konfigurerad SSL. Så här inaktiverar du strikt tvingande:
 
 1. Använd valfri redigerare för att redigera programmets JavaScript-konfigurationsfil, som finns (som standard) på följande platser (beroende på operativsystem):
 
@@ -299,10 +299,10 @@ I båda metoderna startar programmet i rotmappen DAM.
 
 ## Dölj utgångna resurser {#hide-expired-assets}
 
-När du bläddrar bland resurser inifrån [!DNL Experience Manager] de utgångna resurserna visas inte i användargränssnittet. Administratörer kan göra följande konfiguration för att förhindra att resurser som har gått ut visas, söks och hämtas när de bläddrar bland resurser från skrivbordsappen och Asset Link. Konfigurationen fungerar för alla användare, oavsett administratörsbehörighet.
+När du bläddrar bland resurser inifrån [!DNL Experience Manager] de utgångna resurserna visas inte i användargränssnittet. Administratörer kan konfigurera inställningar för att förhindra visning, sökning och hämtning av utgångna resurser när de bläddrar från skrivbordsappen och Asset Link. Om du gör det kan du vara säker på att utgångna resurser inte är tillgängliga under dessa åtgärder. Konfigurationen fungerar för alla användare, oavsett administratörsbehörighet.
 
-* [Konfiguration i Experience Manager 6.5 för att dölja förfallna resurser](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#hide-expired-assets-via-acp-api).
-* [Konfiguration i Experience Manager as a Cloud Service för att dölja utgångna resurser](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/manage-digital-assets.html#hide-expired-assets-via-acp-api).
+* [Konfiguration i Experience Manager 6.5 för att dölja förfallna resurser](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/manage-assets#hide-expired-assets-via-acp-api).
+* [Konfiguration i Experience Manager as a Cloud Service för att dölja utgångna resurser](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets#hide-expired-assets-via-acp-api).
 
 <!--
 ### Need additional help with [!DNL Experience Manager] desktop app {#additional-help}
