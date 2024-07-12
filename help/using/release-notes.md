@@ -1,6 +1,6 @@
 ---
-title: "[!DNL Adobe Experience Manager] versionsinformation för skrivbordsapp"
-description: Versionsinformation, förbättringar, nya funktioner, kompatibilitet och länkar för [!DNL Adobe Experience Manager] datorprogram.
+title: "[!DNL Adobe Experience Manager] versionsinformation för skrivbordsappen"
+description: Versionsinformation, förbättringar, nya funktioner, kompatibilitet och hämtningslänkar för  [!DNL Adobe Experience Manager] skrivbordsappen.
 mini-toc-levels: 1
 feature: Desktop App,Release Information
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Adobe Experience Manager] versionsinformation för skrivbordsapp {#release-notes-v2}
+# Versionsinformation för [!DNL Adobe Experience Manager]-datorprogrammet {#release-notes-v2}
 
 Versionsinformationen för den senaste versionen av skrivbordsappen 2.3.0 anges nedan. Lanseringsdatumet är 14 juli 2023.
 
@@ -22,19 +22,19 @@ Den senaste versionen av skrivbordsappen innehåller följande felkorrigeringar 
 * Förbättrat stöd för företagsutkast och webbfiltrering.
 
 
-The **stöds [!DNL Experience Manager] versioner** är:
+**De [!DNL Experience Manager] versioner** som stöds är:
 
 * [!DNL Experience Manager] som [!DNL Cloud Service]. Se [versionsinformation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/home).
-* [!DNL Experience Manager] 6.5.0 eller senare, på Adobe Managed Services (AMS) eller On-Premise. Se [Versionsinformation för Service Pack](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/release-notes).
+* [!DNL Experience Manager] 6.5.0 eller senare, på Adobe Managed Services (AMS) eller On-Premise. Se [versionsinformation för Service Pack](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/release-notes).
 
-[!DNL Adobe Experience Manager] datorprogrammet är tillgängligt för följande **operativsystem**:
+Datorprogrammet [!DNL Adobe Experience Manager] är tillgängligt för följande **operativsystem**:
 
 * macOS X 10.14 eller senare, med de senaste felkorrigeringarna.
 * Windows 10 med de senaste servicepaketen och felkorrigeringarna.
 
-The **hämta URL:er** för operativsystem som stöds:
+**URL:erna för hämtning** för operativsystem som stöds är:
 
-| Operativsystem | [!DNL Experience Manager] som [!DNL Cloud Service] | [!DNL Experience Manager] 6.x |
+| Operativsystem | [!DNL Experience Manager] som en [!DNL Cloud Service] | [!DNL Experience Manager] 6.x |
 |---|---|---|
 | macOS (v2.3.0) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-x64-2.3.0.dmg) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-x64-2.3.0.dmg) |
 | macOS Apple Silicon (M1) (v2.3.0) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-arm64-2.3.0.dmg) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-arm64-2.3.0.dmg) |
@@ -60,23 +60,23 @@ The **hämta URL:er** för operativsystem som stöds:
 
 ## Stöd för olika resurser och filtyper {#support-for-file-types}
 
-Programmet har stöd för resurser som lagras i [!DNL Experience Manager] som representerar en binär fil för dess grundläggande åtgärder. När du öppnar filer i det inbyggda datorprogrammet måste operativsystemet koppla filtyperna PNG eller JPG till specifika program som Mac Preview eller Adobe Photoshop.
+Programmet stöder resurser som lagras i [!DNL Experience Manager] och som representerar binära filer för dess grundläggande åtgärder. När du öppnar filer i det inbyggda datorprogrammet måste operativsystemet koppla filtyperna PNG eller JPG till specifika program som Mac Preview eller Adobe Photoshop.
 
-Några filtyper har stöd för att placera länkade resurser i binärfilen. Programmet hämtar de länkade resurserna i förväg om resursen finns i [!DNL Experience Manager] databas när sådana binära filer öppnas med datorprogrammet. Filtyper som stöds för närvarande är:
+Några filtyper har stöd för att placera länkade resurser i binärfilen. Programmet hämtar de länkade resurserna i förväg om resursen finns i [!DNL Experience Manager]-databasen när sådana binära filer öppnas med skrivbordsappen. Filtyper som stöds för närvarande är:
 
 * [!DNL Adobe InDesign] filer (INDD-format)
 * [!DNL Adobe Illustrator] filer (AI-format)
 * [!DNL Adobe Photoshop] filer (PS-format)
 
-Funktionen stöds med [!DNL Adobe Creative Cloud] 2018 [!DNL Adobe Creative Cloud] 2019-versioner av ovanstående program. Appen använder en heuristisk, bäst matchande metod för att mappa lokala skrivbordssökvägar för länkade resurser till URL:er på [!DNL Experience Manager] server. Den bygger på några antaganden:
+Funktionen stöds i versionerna [!DNL Adobe Creative Cloud] 2018 och [!DNL Adobe Creative Cloud] 2019 av ovanstående program. Appen använder en heuristisk, bäst matchande metod för att mappa de lokala skrivbordssökvägarna för länkade resurser till URL:er på servern [!DNL Experience Manager]. Den bygger på några antaganden:
 
-* Sökvägar till monterade filer i det ursprungliga programmet använder en global skrivbordssökväg (placerad från den lokala nätverksresursen som visas med [!UICONTROL Reveal] ).
+* Sökvägar till monterade filer i det ursprungliga programmet använder en global skrivbordssökväg (placerad från den lokala nätverksresursen som visas med alternativet [!UICONTROL Reveal]).
 
 * Sökvägar lagras i filens XMP av det inbyggda programmet.
 
 * [!DNL Experience Manager] har extraherat XMP med sökvägarna till resursens metadatapost.
 
-* Banorna kan matchas mot resurser i [!DNL Experience Manager], dvs. de monterade filerna finns också i [!DNL Experience Manager] under en matchande sökväg.
+* Sökvägarna kan matchas mot resurser i [!DNL Experience Manager], vilket innebär att de monterade filerna också finns i [!DNL Experience Manager] under en matchande sökväg.
 
 ## Nya funktioner, förbättringar och felkorrigeringar {#what-is-new}
 
@@ -126,15 +126,15 @@ I den här versionen av programmet finns en felkorrigering.
 
 Felet som har åtgärdats i den här versionen är:
 
-* Överförings- och nedladdningshastigheterna har förbättrats, även med stora resurser. Den här versionen åtgärdade ett problem där tillgångar överförs med [!DNL desktop app] ibland misslyckades när mycket stora filer överfördes.
+* Överförings- och nedladdningshastigheterna har förbättrats, även med stora resurser. Den här versionen åtgärdade ett problem där resursöverföringar med [!DNL desktop app] ibland misslyckades när mycket stora filer överfördes.
 
 **Uppdatering i app v2.1.2.0**
 
-* Ett nytt alternativ till [!UICONTROL Clear Cookies] läggs till i programmets huvudmeny. Det hjälper vid potentiella inloggningsproblem, t.ex. när en anslutning ändras från en server till en annan. Se [rensa cookies innan anslutning sker](/help/using/troubleshoot.md#cannot-login-cookies-issue).
+* Ett nytt alternativ för [!UICONTROL Clear Cookies] läggs till på programmets huvudmeny. Det hjälper vid potentiella inloggningsproblem, t.ex. när en anslutning ändras från en server till en annan. Se [rensa cookies innan du ansluter](/help/using/troubleshoot.md#cannot-login-cookies-issue).
 
-* Ett nytt alternativ har lagts till som, om det här alternativet har valts, tillåter att programmet överför mappar och filer med nodnamn i [!DNL Adobe Experience Manager] matchar de lokala fil- och mappnamnen. Den här processen säkerställer enhetlighet mellan lokala och överförda namn.
+* Ett nytt alternativ har lagts till som, om det här alternativet har valts, tillåter programmet att överföra mappar och filer med nodnamn i [!DNL Adobe Experience Manager] som matchar de lokala fil- och mappnamnen. Den här processen säkerställer enhetlighet mellan lokala och överförda namn.
 
-  Det här beteendet liknar standardbeteendet i version 1 av datorprogrammet. Om alternativet inte är aktiverat i den aktuella versionen är blanksteg och tecken `% ; # , + ? ^ { } "` i mappnamn ersätts med bindestreck i mappsökvägar. Versaler konverteras också till gemener i mappsökvägar. I filnamn är dock tecknen `# % { } ? &` ersätts med bindestreck, men blanksteg och hölje behålls. Mer information finns i [appinställningar](/help/using/install-upgrade.md#set-preferences) och [Överför och lägg till nya resurser](/help/using/using.md#upload-and-add-new-assets-to-aem).
+  Det här beteendet liknar standardbeteendet i version 1 av datorprogrammet. Om alternativet inte är aktiverat i den aktuella versionen ersätts blanksteg och tecknen `% ; # , + ? ^ { } "` i mappnamn med bindestreck i mappsökvägar. Versaler konverteras också till gemener i mappsökvägar. I filnamn ersätts dock tecknen `# % { } ? &` med bindestreck, men blanksteg och versaler behålls. Mer information finns i [appinställningar](/help/using/install-upgrade.md#set-preferences) och [Överför och lägg till nya resurser](/help/using/using.md#upload-and-add-new-assets-to-aem).
 
 **Uppdatering i app v2.1.1.0**
 
@@ -142,13 +142,13 @@ Felet som har åtgärdats i den här versionen är:
 
 **Uppdatering i app v2.1.0.0**
 
-* Om du vill överföra resurser kan användare nu dra filer eller mappar i programmets gränssnitt, direkt från Utforskaren i Windows eller Mac Finder. Den här processen fungerar utöver det överföringsalternativ som är tillgängligt i programmet. Se [överföra resurser](/help/using/using.md#upload-and-add-new-assets-to-aem) <!-- CQ-4309527 -->
+* Om du vill överföra resurser kan användare nu dra filer eller mappar i programmets gränssnitt, direkt från Utforskaren i Windows eller Mac Finder. Den här processen fungerar utöver det överföringsalternativ som är tillgängligt i programmet. Se [Överför resurser](/help/using/using.md#upload-and-add-new-assets-to-aem) <!-- CQ-4309527 -->
 
 **Uppdatering i app v2.0.3**
 
 Felet som har åtgärdats i den här versionen är:
 
-* Ett inloggningsproblem har korrigerats för appanvändare i Windows som försöker få åtkomst till DAM-databasen på [!DNL Adobe Experience Manager] 6.5.5.0
+* Ett inloggningsproblem har korrigerats för appanvändare i Windows som försöker få åtkomst till DAM-databasen på [!DNL Adobe Experience Manager] 6.5.5.0.
 
 **Uppdateringar i app v2.0.2**
 
@@ -168,47 +168,47 @@ Felkorrigeringarna och uppdateringarna är:
 
 Felkorrigeringarna och uppdateringarna är:
 
-* Tillåt alternativ att konfigurera `%Temp%` katalog som matchar `%APPDATA%` bana. <!-- CQ-4282665 -->
+* Tillåt alternativet att konfigurera katalogen `%Temp%` så att den matchar sökvägen `%APPDATA%`. <!-- CQ-4282665 -->
 
-* Tillåt användare att logga in [!DNL Experience Manager] Skapa via Okta SAML-autentisering. <!-- CQ-4278134 -->
+* Tillåt användare att logga in på [!DNL Experience Manager] Author via Okta SAML-autentisering. <!-- CQ-4278134 -->
 
 ## Installationsanvisningar {#installation-instructions-v2}
 
-Mer information om hur du installerar och konfigurerar programmet finns i [Installera [!DNL Experience Manager] datorprogram](install-upgrade.md).
+Mer information om hur du installerar och konfigurerar programmet finns i [Installera [!DNL Experience Manager] skrivbordsappen](install-upgrade.md).
 
-Om du uppgraderar från en tidigare [!DNL Experience Manager] datorprogrammet måste du följa de bästa metoderna för övergångar som listas på [uppgradera från föregående version](install-upgrade.md#upgrade-from-previous-version).
+Om du uppgraderar från ett tidigare [!DNL Experience Manager]-datorprogram måste du följa de bästa metoderna för övergångar som listas vid [uppgradering från den tidigare versionen](install-upgrade.md#upgrade-from-previous-version).
 
 ## Viktiga anteckningar om hur appen fungerar {#how-app-works}
 
 Det är viktigt att du förstår följande om programmet och hur det fungerar.
 
-* Programmet ger fullständig kontroll över åtgärder som kräver fullständig överföring av objektbinärfiler från och till [!DNL Experience Manager] (**Öppna**, **Redigera**, **Överför ändringar** och **Ladda upp Assets**).
+* Programmet ger fullständig kontroll över åtgärder som kräver fullständig överföring av objektbinärfiler från och till [!DNL Experience Manager] (**Öppna**, **Redigera**, **Överför ändringar** och **Överför Assets**).
 
    * Om du vill arbeta med resursen på skrivbordet måste du uttryckligen öppna, redigera eller hämta till skrivbordet, antingen individuellt, i en mapp eller genom att markera flera.
 
-   * Om du vill få lokala ändringar av resurser överförda till [!DNL Experience Manager]måste du välja [!UICONTROL Upload Changes], antingen individuellt eller genom att markera flera.
+   * Om du vill få lokala ändringar av resurser överförda till [!DNL Experience Manager] måste du välja [!UICONTROL Upload Changes], antingen individuellt eller via flerval.
 
    * Programmet är inte en synkroniseringsklient som synkroniserar resurser på skrivbordet och [!DNL Experience Manager].
 
-   * Programmet tillhandahåller inte någon nätverksresurs som mappar [!DNL Experience Manager] databas som en virtuell mappstruktur.
+   * Programmet tillhandahåller inte någon nätverksresurs som mappar databasen [!DNL Experience Manager] som en virtuell mappstruktur.
 
 * Den lista över resurser som visas av programmet baseras på statusen för Assets-databasen. Filer som laddas ned lokalt och därefter byter namn i de lokala filerna eller cachemappen visas eller hanteras inte i programmet.
 
 * Om programmet inte visar det förväntade resultatet klickar du på uppdateringsikonen i det övre fältet.
 
-* Den lokala nätverksresursen, som visas när du använder [!UICONTROL Reveal File] visas endast filer (och mappar) som är tillgängliga lokalt. [!UICONTROL Reveal File] och [!UICONTROL Reveal Folder] hämtar resurser i förväg så att rätt resurser visas i den lokala nätverksresursen.
+* Den lokala nätverksresursen, som visas när du använder åtgärden [!UICONTROL Reveal File], visar bara filer (och mappar) som är tillgängliga lokalt. [!UICONTROL Reveal File] och [!UICONTROL Reveal Folder] hämtar resurser i förväg för att det ska gå att visa rätt resurser i den lokala nätverksresursen.
 
 * Den lokala nätverksresursen SMB (Mac)/WebDAV (Win) används när en Adobe Creative Cloud-app läser resursfilerna som är länkade/placerade i en systemspecifik fil i appen Creative Cloud.
 
 I följande diagram visas flödet av resurser och filer från molnet till det lokala filsystemet och tvärtom, vilket initierats av användaråtgärder.
 
-![Flöde för resurser från [!DNL Experience Manager] från server till datorprogram via datorprogrammet](assets/da20_flow_diagram.png)
+![Flöde av resurser från [!DNL Experience Manager]-servern till inbyggda datorprogram via skrivbordsappen](assets/da20_flow_diagram.png)
 
 ## Kända fel {#known-issues-v2}
 
 **Problem med användargränssnittet:**
 
-* Ibland blir gränssnittet i skrivbordsappen tomt. Högerklicka och klicka [!UICONTROL Refresh] för att läsa in programmet igen. Efter en sådan uppdatering börjar du i DAM-databasens rot. Uppdateringar eller status för dina resurser behålls. <!-- CQ-4270267 -->
+* Ibland blir gränssnittet i skrivbordsappen tomt. Högerklicka och klicka på [!UICONTROL Refresh] för att läsa in programmet igen. Efter en sådan uppdatering börjar du i DAM-databasens rot. Uppdateringar eller status för dina resurser behålls. <!-- CQ-4270267 -->
 
 * Svårt att navigera i mappar/sökresultat utan styrplatta eller muspekare. Rullningslisten visas inte med hjullösa musenheter. <!-- CQ-4269947 -->
 
@@ -216,22 +216,22 @@ I följande diagram visas flödet av resurser och filer från molnet till det lo
 
 * När du har tillämpat och tagit bort filtret för att hitta alla lokalt redigerade resurser tar programmet inte användarna till sökresultaten eller mappvyn som användarna började med. Appen visar rotmappen för DAM-databasen.
 
-* Ibland när du ansluter till en URL som inte har en [!DNL Experience Manager] när servern körs, svarar inte anslutningsskärmen. Avsluta programmet och starta det igen.
+* När du ansluter till en URL som inte har någon [!DNL Experience Manager]-server aktiverad, svarar ibland inte anslutningsskärmen. Avsluta programmet och starta det igen.
 
 **CRUD-problem (Skapa, Läs, Uppdatera och Ta bort):**
 
-* När du överför ändringar till en resurs med kommentarer lagras kommentarerna tillsammans med resursen i [!DNL Experience Manager] men visas inte som versionskommentarer. Problemet är löst i [!DNL Experience Manager] 6.4.5 och [!DNL Experience Manager] 6.5.1. Adobe rekommenderar att du installerar de senaste Service Pack-uppdateringarna. <!-- CQ-4268990 -->
+* När du överför ändringar till en resurs med kommentarer lagras kommentarerna med resursen i [!DNL Experience Manager], men de visas inte som versionskommentarer. Problemet har lösts i [!DNL Experience Manager] 6.4.5 och [!DNL Experience Manager] 6.5.1. Adobe rekommenderar att du installerar de senaste Service Pack-uppdateringarna. <!-- CQ-4268990 -->
 
 * En användare kan inte avbryta överföringar av resurser. Om du utlöste en oavsiktlig stor överföring avslutar du programmet och startar det igen. <!-- CQ-4278940 -->
 
 **Plattformsproblem:**
 
-* I Windows kan en medias status ändras direkt till [!UICONTROL Edited Locally] efter att du öppnat den, även om du inte har redigerat den. Klicka [!UICONTROL Refresh] att uppdatera.
+* I Windows kan en medias status ändras omedelbart till [!UICONTROL Edited Locally] efter att den har öppnats, även om du inte har redigerat den. Klicka på [!UICONTROL Refresh] för att uppdatera.
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] som [!DNL Cloud Service] dokumentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service)
->* [[!DNL Experience Manager] som [!DNL Cloud Service] [!DNL Assets] dokumentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/overview)
->* [Så här använder du [!DNL Experience Manager] datorprogram](using.md)
+>* [[!DNL Experience Manager] som en [!DNL Cloud Service] dokumentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service)
+>* [[!DNL Experience Manager] som en [!DNL Cloud Service] [!DNL Assets] dokumentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/overview)
+>* [Så här använder du [!DNL Experience Manager] datorprogrammet](using.md)
 >* [Installera och uppgradera datorprogrammet](install-upgrade.md)
->* [Bästa praxis och felsökningstips](troubleshoot.md)
+>* [God praxis och felsökningstips](troubleshoot.md)

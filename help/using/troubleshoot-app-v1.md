@@ -1,6 +1,6 @@
 ---
 title: Felsök datorprogramversion 1.10.
-description: Felsökning [!DNL Adobe Experience Manager] version 1.10 av datorprogrammet för att lösa tillfälliga problem i samband med installation, uppgradering och konfiguration.
+description: Felsök [!DNL Adobe Experience Manager] skrivbordsappversion 1.10 för att lösa enstaka problem i samband med installation, uppgradering och konfiguration.
 exl-id: 1e1409c2-bf5e-4e2d-a5aa-3dd74166862c
 source-git-commit: 5676e7ece8bb43f051dae72d17e15ab1c34caefc
 workflow-type: tm+mt
@@ -9,23 +9,23 @@ ht-degree: 0%
 
 ---
 
-# Felsökning [!DNL Adobe Experience Manager] datorprogram v1.x {#troubleshoot-aem-desktop-app}
+# Felsök [!DNL Adobe Experience Manager]-datorprogrammet v1.x {#troubleshoot-aem-desktop-app}
 
 Felsök AEM datorprogram för att lösa tillfälliga problem som rör installation, uppgradering, konfiguration och så vidare.
 
-The [!DNL Adobe Experience Manager] skrivbordsappen innehåller verktyg som hjälper dig att mappa AEM Assets-databasen som en nätverksresurs på skrivbordet (SMB-resurs på macOS). Nätverksresursen är en operativsystemsteknik som gör att fjärrkällor kan hanteras som om de var en del av en dators lokala filsystem. För skrivbordsprogrammet är fjärrfilskällan DAM-databasstrukturen (Digital Asset Management) för en AEM fjärrinstans. I följande diagram beskrivs skrivbordsappens topologi:
+Skrivbordsappen [!DNL Adobe Experience Manager] innehåller verktyg som hjälper dig att mappa AEM Assets-databasen som en nätverksresurs på skrivbordet (SMB-resurs på macOS). Nätverksresursen är en operativsystemsteknik som gör att fjärrkällor kan hanteras som om de var en del av en dators lokala filsystem. För skrivbordsprogrammet är fjärrfilskällan DAM-databasstrukturen (Digital Asset Management) för en AEM fjärrinstans. I följande diagram beskrivs skrivbordsappens topologi:
 
-![appdiagram](assets/aem-desktopapp-architecture.png)
+![skrivbordsappsdiagram](assets/aem-desktopapp-architecture.png)
 
-Med den här arkitekturen fångar skrivbordsappen upp filsystemanrop (öppna, stänga, läsa, skriva osv.) till den monterade nätverksresursen och översätter dem till interna AEM HTTP-anrop till AEM. Filerna cachelagras lokalt. Mer information finns i [Använd AEM v1.x](use-app-v1.md).
+Med den här arkitekturen fångar skrivbordsappen upp filsystemanrop (öppna, stänga, läsa, skriva osv.) till den monterade nätverksresursen och översätter dem till interna AEM HTTP-anrop till AEM. Filerna cachelagras lokalt. Mer information finns i [Använd AEM datorprogram v1.x](use-app-v1.md).
 
 ## Översikt över komponenten AEM datorprogram {#desktop-app-component-overview}
 
 Datorprogrammet innehåller följande komponenter:
 
 * **Skrivbordsprogrammet**: Programmet monterar eller avmonterar DAM som ett fjärrfilsystem. Det översätter filsystemanrop mellan den lokalt monterade nätverksresursen och AEM fjärrinstans som den ansluter till.
-* **WebDAV/SMB-klient för operativsystem**: Hanterar kommunikation mellan Utforskaren/Finder i Windows och skrivbordsappen. Om en fil hämtas, skapas, ändras, tas bort, flyttas eller kopieras, kommunicerar operativsystemets (OS) WebDAV/SMB-klient den här åtgärden med skrivbordsprogrammet. När kommunikationen är klar översätts den av skrivbordsappen till API-anrop AEM fjärranslutning. Om en användare till exempel skapar en fil i den monterade katalogen, initierar WebDAV/SMB-klienten en begäran som skrivbordsappen översätter till en HTTP-begäran som skapar filen i DAM. WebDAV/SMB-klienten är en inbyggd komponent i operativsystemet. Den är inte på något sätt kopplad till datorprogrammet, AEM eller Adobe.
-* **Adobe Experience Manager, instans**: Ger åtkomst till resurser som lagras i AEM Assets DAM-databasen. Dessutom utför programmet åtgärder som begärts av skrivbordsappen för de lokala skrivbordsprogrammen som interagerar med den monterade nätverksresursen. AEM ska köra AEM version 6.1 eller senare. AEM instanser som kör tidigare AEM kan kräva extra funktionspaket och snabbkorrigeringar för att bli fullt fungerande.
+* **Operativsystemets WebDAV/SMB-klient**: Hanterar kommunikationen mellan Utforskaren/Finder i Windows och skrivbordsappen. Om en fil hämtas, skapas, ändras, tas bort, flyttas eller kopieras, kommunicerar operativsystemets (OS) WebDAV/SMB-klient den här åtgärden med skrivbordsprogrammet. När kommunikationen är klar översätts den av skrivbordsappen till API-anrop AEM fjärranslutning. Om en användare till exempel skapar en fil i den monterade katalogen, initierar WebDAV/SMB-klienten en begäran som skrivbordsappen översätter till en HTTP-begäran som skapar filen i DAM. WebDAV/SMB-klienten är en inbyggd komponent i operativsystemet. Den är inte på något sätt kopplad till datorprogrammet, AEM eller Adobe.
+* **Adobe Experience Manager-instans**: Ger åtkomst till resurser som lagras i AEM Assets DAM-databasen. Dessutom utför programmet åtgärder som begärts av skrivbordsappen för de lokala skrivbordsprogrammen som interagerar med den monterade nätverksresursen. AEM ska köra AEM version 6.1 eller senare. AEM instanser som kör tidigare AEM kan kräva extra funktionspaket och snabbkorrigeringar för att bli fullt fungerande.
 
 ## Användningsexempel för AEM datorprogram {#intended-use-cases-for-aem-desktop-app}
 
@@ -62,7 +62,7 @@ AEM Desktop lämpar sig inte för intensiv bearbetning av filsystem, inklusive, 
 
 På grund av begränsningar i operativsystemet har Windows en filstorleksbegränsning på 4 294 967 295 byte (cirka 4,29 GB). Det beror på en registerinställning som definierar hur stor en fil på en nätverksresurs kan vara. Registerinställningens värde är ett DWORD med en maximal storlek som är lika med det refererade talet.
 
-The [!DNL Experience Manager] skrivbordsappen har inget konfigurerbart timeout-värde som kopplar från anslutningen mellan [!DNL Experience Manager] efter ett fast tidsintervall. När du överför stora resurser, och anslutningen får timeout efter en stund, försöker programmet överföra resursen några gånger genom att öka tidsgränsen för överföring. Det finns inget rekommenderat sätt att ändra standardinställningarna för timeout.
+Skrivbordsappen [!DNL Experience Manager] har inget konfigurerbart timeout-värde som kopplar från anslutningen mellan servern [!DNL Experience Manager] och skrivbordsappen efter ett fast tidsintervall. När du överför stora resurser, och anslutningen får timeout efter en stund, försöker programmet överföra resursen några gånger genom att öka tidsgränsen för överföring. Det finns inget rekommenderat sätt att ändra standardinställningarna för timeout.
 
 ## Cachning och kommunikation med AEM {#caching-and-communication-with-aem}
 
@@ -88,7 +88,7 @@ Alla åtgärder cachelagras inte lokalt. Följande överförs direkt till AEM Se
 
 ## Individuella åtgärder {#individual-operations}
 
-Vid felsökning av deloptimerade prestanda för enskilda användare ska du först granska [appbegränsningarna](#limitations). De följande avsnitten innehåller förslag på hur du kan förbättra prestandan för enskilda användare.
+När du felsöker deloptimerade prestanda för enskilda användare ska du först granska [appbegränsningarna](#limitations). De följande avsnitten innehåller förslag på hur du kan förbättra prestandan för enskilda användare.
 
 ## Bandbreddsrekommendationer {#bandwidth-recommendations}
 
@@ -130,18 +130,18 @@ Om WebDAV-/SMB-prestanda försämras drastiskt när flera användare arbetar sam
 Du kan förbättra AEM prestanda genom att aktivera tillfälliga arbetsflöden för arbetsflödet DAM Update Asset. Om du aktiverar tillfälliga arbetsflöden minskas den processorkraft som krävs för att uppdatera resurser när de skapas eller ändras i AEM.
 
 1. Navigera till `/miscadmin` i Experience Manager-instansen (`https://[aem_server]:[port]/miscadmin`).
-1. Expandera från navigeringsträdet **verktyg** > **Arbetsflöde** > **Models** > **Dam**.
-1. Dubbelklicka **DAM-uppdateringsresurs**.
-1. Växla från den flytande verktygspanelen till **Sida** och sedan klicka på **Sidegenskaper**.
-1. Välj **Övergående arbetsflöde** och klicka **OK**.
+1. Expandera **Verktyg** > **Arbetsflöde** > **Modeller** > **Dam** i navigeringsträdet.
+1. Dubbelklicka på **DAM-uppdateringsresurs**.
+1. Gå till fliken **Sida** på den flytande verktygspanelen och klicka sedan på **Sidegenskaper**.
+1. Markera kryssrutan **Transient Workflow** och klicka på **OK**.
 
 ### Justera Granska övergående arbetsflödeskö {#adjust-granite-transient-workflow-queue}
 
 En annan metod för att förbättra AEM prestanda är att konfigurera värdet för det maximala antalet parallella jobb för jobbet Beviljit Transient Workflow Queue. Det rekommenderade värdet är ungefär hälften av antalet tillgängliga processorer med servern. Så här justerar du värdet:
 
-1. Navigera till `/system/console/configMgr` i den AEM instansen som ska konfigureras (till exempel `https://[aem_server]:[port]/system/console/configMgr`).
-1. Sök efter `QueueConfiguration`och klicka för att öppna varje jobb tills du hittar **Bevilja tillfällig arbetsflödeskö** och klicka på **Redigera**.
-1. Ändra `Maximum Parallel Jobs` och klicka **Spara**.
+1. Navigera till `/system/console/configMgr` i AEM som ska konfigureras (till exempel `https://[aem_server]:[port]/system/console/configMgr`).
+1. Sök efter `QueueConfiguration` och klicka för att öppna varje jobb tills du hittar jobbet **Bevilja tillfällig arbetsflödeskö** och klicka på **Redigera**.
+1. Ändra värdet `Maximum Parallel Jobs` och klicka på **Spara**.
 
 ## AWS-konfiguration {#aws-configuration}
 
@@ -149,7 +149,7 @@ På grund av begränsningar i nätverkets bandbredd kan WebDAV/SMB-prestanda fö
 
 Den här åtgärden ökar specifikt mängden nätverksbandbredd som är tillgänglig för servern. Här är några detaljer:
 
-* Den mängd nätverksbandbredd som är dedikerad till en AWS-instans ökar när instansens storlek ökar. Mer information om hur mycket bandbredd som är tillgänglig för varje instansstorlek finns i [AWS-dokumentation](https://aws.amazon.com/ec2/instance-types/).
+* Den mängd nätverksbandbredd som är dedikerad till en AWS-instans ökar när instansens storlek ökar. Mer information om hur mycket bandbredd som är tillgänglig för varje instansstorlek finns i [AWS-dokumentationen](https://aws.amazon.com/ec2/instance-types/).
 * Vid felsökning för en stor klient konfigurerade Adobe storleken på sin AEM-instans till c4.8xlarge, främst för den dedikerade bandbredden på 4 000 Mbit/s som den erbjuder.
 * Om det ligger en Dispatcher framför AEM ska du se till att den har rätt storlek. Om AEM innehåller 4000 Mbit/s men Dispatcher bara tillhandahåller 500 Mbit/s är den effektiva bandbredden bara 500 Mbit/s. Det beror på att Dispatcher skapar en flaskhals i nätverket.
 
@@ -217,13 +217,13 @@ Det enklaste sättet att åtgärda detta är att öppna filen som är i konflikt
 Att radera AEM Skrivbordscache är en preliminär felsökningsåtgärd som kan lösa flera AEM problem med skrivbordet.
 
 Du kan rensa cacheminnet genom att ta bort programmets cachekatalog på följande platser.
-I Windows `%LocalAppData%\Adobe\AssetsCompanion\Cache\`
+I Windows: `%LocalAppData%\Adobe\AssetsCompanion\Cache\`
 
-I MAC `~/Library/Group/Containers/group.com.adobe.aem.desktop/cache/`
+I Mac: `~/Library/Group/Containers/group.com.adobe.aem.desktop/cache/`
 
-Platsen kan dock ändras beroende på AEM datorns konfigurerade AEM. Värdet är en kodad version av mål-URL:en. Om programmet till exempel har som mål `http://localhost:4502`, är katalognamnet `http%3A%2F%2Flocalhost%3A4502%2F`.
+Platsen kan dock ändras beroende på AEM datorns konfigurerade AEM. Värdet är en kodad version av mål-URL:en. Om programmet till exempel har `http://localhost:4502` som mål är katalognamnet `http%3A%2F%2Flocalhost%3A4502%2F`.
 
-Om du vill rensa cachen tar du bort &lt;encoded aem=&quot;&quot; endpoint=&quot;&quot;> katalog.
+Ta bort katalogen &lt;Encoded AEM Endpoint> om du vill rensa cacheminnet.
 
 >[!NOTE]
 >
@@ -237,7 +237,7 @@ Om du vill rensa cachen tar du bort &lt;encoded aem=&quot;&quot; endpoint=&quot;
 
 Du använder samma procedur för att kontrollera vilken version AEM är för både Windows och macOS.
 
-Klicka på ikonen AEM skrivbordet och välj **Om**. Versionsnumret visas på skärmen.
+Klicka på ikonen AEM Skrivbord och välj sedan **Om**. Versionsnumret visas på skärmen.
 
 ## Uppgradera AEM på macOS {#upgrading-aem-desktop-app-on-macos}
 
@@ -273,15 +273,15 @@ Server-API:t kräver att ytterligare rubriker, X-Destination, X-Depth och X-Over
 Den vanligaste orsaken till problem med AEM Skrivbord som ansluter till en SAML-AEM (SSO-enabled) är att SAML-processen inte dirigerar tillbaka till den ursprungligen begärda sökvägen. Alternativt kan anslutningen dirigeras om till en värd som inte är konfigurerad i AEM skrivbordsapp. Så här verifierar du inloggningsprocessen:
 
 1. Öppna en webbläsare.
-1. Ange URL-adressen i adressfältet `/content/dam.json`.
+1. Ange URL:en `/content/dam.json` i adressfältet.
 1. Ersätt URL:en med AEM, till exempel `https://localhost:4502/content/dam.json`.
 1. Logga in på AEM.
 1. När du har loggat in kontrollerar du webbläsarens aktuella adress i adressfältet. Den ska matcha den URL som du ursprungligen angav.
-1. Verifiera att allt före `/content/dam.json` matchar AEM som konfigurerats AEM Skrivbord.
+1. Kontrollera att allt före `/content/dam.json` överensstämmer med AEM som konfigurerats AEM skrivbordet.
 
 ### SSL-konfigurationsproblem {#ssl-configuration-issue}
 
-De bibliotek som AEM datorprogrammet använder för HTTP-kommunikation använder strikta SSL-regler. Ibland kan en anslutning fungera med en webbläsare, men det går inte att använda AEM datorprogram. Installera det saknade mellanliggande certifikatet i Apache om du vill konfigurera SSL korrekt. Se [Installera ett mellanliggande CA-certifikat i Apache](https://access.redhat.com/solutions/43575).
+De bibliotek som AEM datorprogrammet använder för HTTP-kommunikation använder strikta SSL-regler. Ibland kan en anslutning fungera med en webbläsare, men det går inte att använda AEM datorprogram. Installera det saknade mellanliggande certifikatet i Apache om du vill konfigurera SSL korrekt. Se [Så här installerar du ett mellanliggande CA-certifikat i Apache](https://access.redhat.com/solutions/43575).
 
 ## Använda AEM Desktop med Dispatcher {#using-aem-desktop-with-dispatcher}
 
