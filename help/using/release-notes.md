@@ -4,9 +4,9 @@ description: Versionsinformation, förbättringar, nya funktioner, kompatibilite
 mini-toc-levels: 1
 feature: Desktop App,Release Information
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: 11a4397aa54cd58395b02273864f4edd843357a1
+source-git-commit: 19f059875a7519cf28628fd801662da7243b077b
 workflow-type: tm+mt
-source-wordcount: '1953'
+source-wordcount: '1955'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Versionsinformationen för den senaste versionen av datorprogrammet, version 2.3
 
 Den senaste versionen av skrivbordsappen innehåller följande felkorrigeringar och förbättringar:
 
-* Ett nytt installationsprogram för Enterprise Windows installerar programmet under Program Files.
+* Det nya installationsprogrammet för Enterprise Windows installerar programmet under Program Files.
 * Stöd för **grundläggande autentisering** under AEM- och SSO-inloggningar.
 * Konfigurerbart antal resurser som tillåts under överföring.
 
