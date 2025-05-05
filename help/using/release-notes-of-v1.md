@@ -417,7 +417,7 @@ Eftersom mappen `/Volumes` inte längre kräver administratörsbehörighet har d
 
 ## Användbara resurser {#helpful-resources}
 
-* [AEM dokumentation](https://experienceleague.adobe.com/en/docs)
+* [AEM dokumentation](https://experienceleague.adobe.com/sv/docs)
 * [Använd AEM v1.x](use-app-v1.md)
 * [AEM praxis för datorprogram v1.x](best-practices-for-v1.md)
 

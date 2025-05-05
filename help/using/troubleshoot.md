@@ -21,7 +21,7 @@ Följ följande metodtips för att förebygga vissa vanliga problem och felsökn
 
 * **Förstå hur skrivbordsappen fungerar**: Innan du börjar använda programmet bör du ägna en stund åt att veta hur appen fungerar. Lär dig mer om att länka mellan webbgränssnittet [!DNL Experience Manager] och skrivbordet, databasmappning, resurscachning, spara lokalt och överföra i bakgrunden. Se [hur det fungerar](release-notes.md#how-app-works).
 
-* **Undvik tecken som inte stöds i mappnamn**: Använd inte blanksteg och ogiltiga tecken när du skapar eller överför mappar. Visa en lista med tecken på [Skapa mappar i [!DNL Adobe Experience Manager Assets]](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/manage-assets#creating-folders). Tecken som inte stöds i mappnamnet kan påverka vissa [!DNL Experience Manager]-användningsfall.
+* **Undvik tecken som inte stöds i mappnamn**: Använd inte blanksteg och ogiltiga tecken när du skapar eller överför mappar. Visa en lista med tecken på [Skapa mappar i [!DNL Adobe Experience Manager Assets]](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/assets/managing/manage-assets#creating-folders). Tecken som inte stöds i mappnamnet kan påverka vissa [!DNL Experience Manager]-användningsfall.
 
 * **Bästa tillvägagångssätt för att undvika konflikter**: Om du vill undvika potentiella konflikter när du samarbetar med flera resurser går du till [Undvik redigeringskonflikter](using.md#adv-workflow-collaborate-avoid-conflicts).
 
@@ -301,8 +301,8 @@ I båda metoderna startar programmet i rotmappen DAM.
 
 När du bläddrar bland resurser i användargränssnittet [!DNL Experience Manager] visas inte de utgångna resurserna. Administratörer kan konfigurera inställningar för att förhindra visning, sökning och hämtning av utgångna resurser när de bläddrar från skrivbordsappen och Asset Link. Om du gör det kan du vara säker på att utgångna resurser inte är tillgängliga under dessa åtgärder. Konfigurationen fungerar för alla användare, oavsett administratörsbehörighet.
 
-* [Konfiguration i Experience Manager 6.5 för att dölja utgångna resurser](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/manage-assets#hide-expired-assets-via-acp-api).
-* [Konfiguration i Experience Manager as a Cloud Service för att dölja utgångna resurser](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets#hide-expired-assets-via-acp-api).
+* [Konfiguration i Experience Manager 6.5 för att dölja utgångna resurser](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/assets/managing/manage-assets#hide-expired-assets-via-acp-api).
+* [Konfiguration i Experience Manager as a Cloud Service för att dölja utgångna resurser](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets#hide-expired-assets-via-acp-api).
 
 <!--
 ### Need additional help with [!DNL Experience Manager] desktop app {#additional-help}

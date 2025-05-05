@@ -21,7 +21,7 @@ Datorprogrammet monterar AEM Assets-databasen som en nätverksresurs på skrivbo
 
 >[!NOTE]
 >
->Innan du läser det här dokumentet kan du gå igenom den övergripande [AEM och Creative Cloud ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/aem-cc-integration-best-practices) -integreringen för att få en översikt över ämnet på en högre nivå.
+>Innan du läser det här dokumentet kan du gå igenom den övergripande [AEM och Creative Cloud ](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/assets/administer/aem-cc-integration-best-practices) -integreringen för att få en översikt över ämnet på en högre nivå.
 
 ## AEM datorprogramarkitektur {#aem-desktop-app-architecture}
 
@@ -63,7 +63,7 @@ De viktigaste funktionerna i AEM program:
 
 * Använd inte nätverksenheter AEM skrivbordsappen för att spara resurser ofta. Alla sparåtgärder överförs till AEM Assets. Därför är det opraktiskt att utföra intensiva redigeringsåtgärder direkt i den monterade AEM Assets-databasen. När du redigerar en resurs direkt i den monterade databasen krymper resursens tidslinje med irrelevanta versioner och lägger till ytterligare omkostnader på servern.
 
-* Använd inte AEM datorprogram för att migrera stora mängder data från en AEM till en annan. Se [Migreringshandboken](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/assets-migration-guide) för att planera och köra resursmigreringar. Datorprogrammet [stöder däremot massöverföring](use-app-v1.md#bulkupload) av många resurser för första gången i [!DNL Adobe Experience Manager].
+* Använd inte AEM datorprogram för att migrera stora mängder data från en AEM till en annan. Se [Migreringshandboken](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/assets/administer/assets-migration-guide) för att planera och köra resursmigreringar. Datorprogrammet [stöder däremot massöverföring](use-app-v1.md#bulkupload) av många resurser för första gången i [!DNL Adobe Experience Manager].
 
 ## Recommendations för utvalda användningsområden {#recommendations-for-selected-use-cases}
 
@@ -119,7 +119,7 @@ En bra användarupplevelse med AEM datorprogram kräver stabil nätverksanslutni
 
 ### Nätverkshändelser {#network-considerations}
 
-Om du vill ha mer information om de bästa sätten att använda AEM Assets nätverkskonfiguration går du till dokumentet [Så här gör du för att migrera resurser i grupp](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/assets-migration-guide). Några av de viktiga aspekter som hjälper användarna att optimera upplevelsen av AEM program är:
+Om du vill ha mer information om de bästa sätten att använda AEM Assets nätverkskonfiguration går du till dokumentet [Så här gör du för att migrera resurser i grupp](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/assets/administer/assets-migration-guide). Några av de viktiga aspekter som hjälper användarna att optimera upplevelsen av AEM program är:
 
 * **Använd en korrekt konfigurerad Dispatcher**. Använd AEM Dispatcher för ytterligare säkerhet och se till att den är konfigurerad för [AEM anslutning till skrivbordsappen AEM bakom en Dispatcher](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher)
 
@@ -131,8 +131,8 @@ Om du vill ha mer information om de bästa sätten att använda AEM Assets nätv
 
 ### Optimera serverprestanda {#optimizing-server-performance}
 
-Om du vill veta hur AEM Assets-servern ska optimeras för prestanda går du till [AEM Assets Performance Tuning Guide](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines). Några av de viktiga aspekterna av serverprestanda för AEM datorprogram är att optimera arbetsflödeskonfigurationen så att den fungerar bra för överföringar av resurser:
+Om du vill veta hur AEM Assets-servern ska optimeras för prestanda går du till [AEM Assets Performance Tuning Guide](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines). Några av de viktiga aspekterna av serverprestanda för AEM datorprogram är att optimera arbetsflödeskonfigurationen så att den fungerar bra för överföringar av resurser:
 
-* **Mer prestandaöverföring av resurser**. Konfigurera arbetsflödesmodellen [AEM Resursuppdatering så att den blir tillfällig](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines).
+* **Mer prestandaöverföring av resurser**. Konfigurera arbetsflödesmodellen [AEM Resursuppdatering så att den blir tillfällig](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines).
 
 * **Begränsa serverns CPU för överföringar**. Se till att parametern för maximala parallella arbetsflödesjobb är korrekt inställd så att överföringar inte tar bort hela processorn.

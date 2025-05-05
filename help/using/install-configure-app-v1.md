@@ -61,9 +61,9 @@ Kopierings- och flyttningsmetoderna i Assets API kräver att följande ytterliga
 * X-djup
 * X-Overwrite
 
-Skrivbordet [!DNL Experience Manager] ansluter till [!DNL Experience Manager] med en URL som innehåller standardporten. Inställningen `virtualhosts` i Dispatcher-konfigurationen bör därför innehålla standardportnumret. Mer information om konfigurationen av `virtualhosts` finns i [Identifiera virtuella värdar](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#identifying-virtual-hosts-virtualhosts).
+Skrivbordet [!DNL Experience Manager] ansluter till [!DNL Experience Manager] med en URL som innehåller standardporten. Inställningen `virtualhosts` i Dispatcher-konfigurationen bör därför innehålla standardportnumret. Mer information om konfigurationen av `virtualhosts` finns i [Identifiera virtuella värdar](https://experienceleague.adobe.com/sv/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#identifying-virtual-hosts-virtualhosts).
 
-Mer information om hur du konfigurerar Dispatcher att skicka genom dessa ytterligare rubriker finns i [Ange HTTP-rubriker](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#specifying-the-http-headers-to-pass-through-clientheaders).
+Mer information om hur du konfigurerar Dispatcher att skicka genom dessa ytterligare rubriker finns i [Ange HTTP-rubriker](https://experienceleague.adobe.com/sv/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#specifying-the-http-headers-to-pass-through-clientheaders).
 
 ### Stöd för proxy {#proxy-support}
 
@@ -127,6 +127,6 @@ Om du vill peka programmet mot en annan mapp eller enhet redigerar du programmet
 
 >[!MORELIKETHIS]
 >
->* Titta på en [introduktion till [!DNL Experience Manager] skrivbordsappen](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/creative-workflows/aem-desktop-app) (5 minuter, 43 sekunder).
+>* Titta på en [introduktion till [!DNL Experience Manager] skrivbordsappen](https://experienceleague.adobe.com/sv/docs/experience-manager-learn/assets/creative-workflows/aem-desktop-app) (5 minuter, 43 sekunder).
 >* [Använd [!DNL Experience Manager] datorprogrammet](use-app-v1.md).
 >* [Felsökning [!DNL Experience Manager] datorprogrammet](troubleshoot-app-v1.md).
