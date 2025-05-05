@@ -95,7 +95,7 @@ På macOS X finns en liknande katalog på `~/Library/Group Containers/group.com.
 
 ### Alternativ i appen för att hantera cache {#in-app-option-to-manage-cache}
 
-Du kan styra hur mycket diskutrymme som finns tillgängligt för lokal cachelagring. Artefakterna från Assets-servern cachas lokalt för en smidigare upplevelse. Du kan ändra standardinställningarna så att de passar dina behov. Du kan även rensa cacheminnet för att hämta alla resurser på nytt. Om du vill ange önskade alternativ klickar du på programikonen och sedan på **[!UICONTROL Advanced]** > **[!UICONTROL Manage Cache]**. ****
+Du kan styra hur mycket diskutrymme som finns tillgängligt för lokal cachelagring. Artefakterna från Assets-servern cachas lokalt för en smidigare upplevelse. Du kan ändra standardinställningarna så att de passar dina behov. Du kan även rensa cacheminnet för att hämta alla resurser på nytt. Om du vill ange önskade alternativ klickar du på programikonen och sedan på **[!UICONTROL Advanced]** > **[!UICONTROL Manage Cache]**. **&#x200B;**
 
 >[!NOTE]
 >
@@ -127,6 +127,6 @@ Om du vill peka programmet mot en annan mapp eller enhet redigerar du programmet
 
 >[!MORELIKETHIS]
 >
-* Titta på en [introduktion till [!DNL Experience Manager] skrivbordsappen](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/creative-workflows/aem-desktop-app) (5 minuter, 43 sekunder).
-* [Använd [!DNL Experience Manager] datorprogrammet](use-app-v1.md).
-* [Felsökning [!DNL Experience Manager] datorprogrammet](troubleshoot-app-v1.md).
+>* Titta på en [introduktion till [!DNL Experience Manager] skrivbordsappen](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/creative-workflows/aem-desktop-app) (5 minuter, 43 sekunder).
+>* [Använd [!DNL Experience Manager] datorprogrammet](use-app-v1.md).
+>* [Felsökning [!DNL Experience Manager] datorprogrammet](troubleshoot-app-v1.md).
