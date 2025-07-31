@@ -8,20 +8,27 @@ user-guide-description: Lär dig att använda skrivbordsprogrammet Experience Ma
 feature-set: Experience Manager Assets,Experience Manager
 feature: Desktop App
 role: User, Admin
-source-git-commit: 5676e7ece8bb43f051dae72d17e15ab1c34caefc
+source-git-commit: 3f9f5da87647b552e31fae9d19226ac6d20e336f
 workflow-type: tm+mt
-source-wordcount: '64'
-ht-degree: 51%
+source-wordcount: '85'
+ht-degree: 38%
 
 ---
 
 
-# Handbok för Adobe-datorprogrammet {#using}
+# Adobe Experience Manager Desktop App Guide {#get-started}
 
 + [Ökning](introduction.md)
 + [Versionsinformation](release-notes.md)
 + [Installera eller uppgradera](install-upgrade.md)
-+ [Använd appen](using.md)
++ [Kom igång med AEM datorprogram](get-started.md)
++ [Användargränssnitt](user-interface.md)
++ [Sök](search.md)
++ [Använd datorprogrammet](using-desktop-app.md)
++ [Assets](assets-management-tasks.md)
++ [Hämta resurser](download-assets.md)
++ [Överför resurser](upload-assets.md)
++ [Arbeta med flera resurser](working-with-multiple-assets.md)
 + [Felsökning](troubleshoot.md)
 + Hjälp om föregående version {#archive}
    + [Versionsinformation v1](release-notes-of-v1.md)

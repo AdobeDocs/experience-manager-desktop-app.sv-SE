@@ -3,7 +3,7 @@ title: Introduktion till  [!DNL Experience Manager] datorprogrammet
 description: Lär dig hur du använder  [!DNL Adobe Experience Manager] datorprogrammet för att optimera resurshanteringsarbetsflödena för kreativa användare när du använder [!DNL Adobe Experience Manager Assets] direkt från skrivbordet.
 role: User, Admin, Leader
 exl-id: 5da36ac5-ab5b-4f8d-b446-ebe2360ec464
-source-git-commit: 1c7437786a50eeafa884ce92b745f3438b2d2b88
+source-git-commit: f519cb355affea9249d5f5d92c789e993f3ff67d
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 0%
@@ -16,7 +16,7 @@ Adobe erbjuder sammankopplade arbetsflöden i alla sina lösningar för att ge p
 
 Med appen är resurserna i [!DNL Experience Manager Assets] enkelt tillgängliga på ditt lokala skrivbord och kan användas i alla skrivbordsprogram. Du kan öppna och redigera resurserna i de skrivbordsprogram du väljer. Lokala redigeringar sparas bara som en ny version i [!DNL Experience Manager] när du överför ändringarna, vilket möjliggör effektiv redigering av pågående arbete på skrivbordet. Appen har stöd för överföring av resurser och kapslade mappar till [!DNL Experience Manager], vilket gör det enklare att lägga till nytt innehåll i databasen.
 
-En sådan integrering tillåter olika roller i organisationen att hantera resurserna centralt i [!DNL Experience Manager Assets]. Marknadsförare och affärsanvändare kan följa de olika standarderna, inklusive varumärken och licenser. Creative-användare med ett dedikerat [Adobe Asset Link](https://business.adobe.com/products/experience-manager/assets/adobe-asset-link.html)-verktyg har åtkomst till resurser i Adobe Photoshop, Illustrator och InDesign och kan även komma åt resurser på datorn i Creative Cloud och andra systemspecifika program.
+En sådan integrering tillåter olika roller i organisationen att hantera resurserna centralt i [!DNL Experience Manager Assets]. Marknadsförare och affärsanvändare kan följa de olika standarderna, inklusive varumärken och licenser. Creative-användare med ett dedikerat [Adobe Asset Link](https://business.adobe.com/products/experience-manager/assets/adobe-asset-link.html)-verktyg kan komma åt resurser i Adobe Photoshop, Illustrator och InDesign och kan även komma åt resurser på datorn i Creative Cloud och andra program.
 
 >[!NOTE]
 >
@@ -30,7 +30,7 @@ Dokumentationen för skrivbordsappen innehåller information om följande roller
 | Vill du veta vilka krav och tekniska specifikationer som gäller? Vill du ha nedladdningslänkar? | [Versionsinformation](release-notes.md) |
 | Inte nytt för skrivbordsappen? Vill du uppgradera och övergångar smidigt? | [Uppgradera från tidigare version](install-upgrade.md#upgrade-from-previous-version) |
 | Kom igång. Vill du ändra standardinställningarna? | [Installera och konfigurera appen](install-upgrade.md) |
-| Lär dig hur du använder för att bläddra, upptäcka, redigera, överföra, lösa konflikter, göra massåtgärder och så vidare. | [Använd [!DNL Experience Manager] datorprogrammet](using.md) |
+| Lär dig hur du använder för att bläddra, upptäcka, redigera, överföra, lösa konflikter, göra massåtgärder och så vidare. | [Använd [!DNL Experience Manager] datorprogrammet](using-desktop-app.md) |
 | Har du något problem? | [Felsök [!DNL Experience Manager] datorprogrammet](troubleshoot.md) |
 
 ## Nyheter i appen {#whats-new-v2}

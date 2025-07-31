@@ -3,9 +3,9 @@ title: Installera och konfigurera datorprogrammet
 description: Installera och konfigurera  [!DNL Adobe Experience Manager] skrivbordsappen så att den fungerar med [!DNL Adobe Experience Manager Assets] servrar och hämta resurserna på ditt lokala filsystem.
 feature: Desktop App,Release Information
 exl-id: 422e51c1-c456-4151-bb43-4b3d29a58187
-source-git-commit: 1c7437786a50eeafa884ce92b745f3438b2d2b88
+source-git-commit: b1fad118e1ffbd0809afe9a33bcb848648cd8bdd
 workflow-type: tm+mt
-source-wordcount: '1449'
+source-wordcount: '1447'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Så här använder du datorprogrammet [!DNL Experience Manager]:
 
 * Hämta och installera programmet. Se [installera skrivbordsappen](#install-v2) nedan.
 
-* Testa anslutningen med några resurser. Se [hur du bläddrar bland och söker efter resurser](using.md#browse-search-preview-assets).
+* Testa anslutningen med några resurser. Se [hur du bläddrar bland och söker efter resurser](search.md#browse-search-preview-assets).
 
 ## Systemkrav, krav och nedladdningslänkar {#tech-specs-v2}
 
@@ -60,11 +60,11 @@ Följ de här stegen för att installera skrivbordsappen. Avinstallera alla befi
 
 1. Om du uppgraderar från en annan version av appen läser du [Uppgradera skrivbordsappen](#upgrade-from-previous-version).
 
-1. Hoppa över det här steget om du använder [!DNL Experience Manager] som [!DNL Cloud Service], [!DNL Experience Manager] 6.4.4 eller senare eller [!DNL Experience Manager] 6.5.0 eller senare. Kontrollera att din [!DNL Experience Manager]-konfiguration uppfyller kompatibilitetskraven som anges i [versionsinformationen](release-notes.md). Om det behövs hämtar du det tillämpliga [kompatibilitetspaketet](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) och installerar det med pakethanteraren [!DNL Experience Manager] som en [!DNL Experience Manager]-administratör. Information om hur du installerar ett paket finns i [Så här arbetar du med paket](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager).
+1. Hoppa över det här steget om du använder [!DNL Experience Manager] som [!DNL Cloud Service], [!DNL Experience Manager] 6.4.4 eller senare eller [!DNL Experience Manager] 6.5.0 eller senare. Kontrollera att din [!DNL Experience Manager]-konfiguration uppfyller kompatibilitetskraven som anges i [versionsinformationen](release-notes.md). Om det behövs hämtar du det tillämpliga [kompatibilitetspaketet](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) och installerar det med pakethanteraren [!DNL Experience Manager] som en [!DNL Experience Manager]-administratör. Information om hur du installerar ett paket finns i [Så här arbetar du med paket](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager).
 
 1. Kör installationsprogrammets binärfil och följ instruktionerna på skärmen.
 
-1. I Windows kan installationsprogrammet uppmana dig att installera `Visual Studio C++ Redistributable 2015`. Installera den genom att följa instruktionerna på skärmen. Om installationen misslyckas installerar du den manuellt. Hämta installationsprogrammet från [här](https://www.microsoft.com/en-us/download/details.aspx?id=52685) och installera både `vc_redist.x64.exe`- och `vc_redist.x86.exe`-filer. Kör installationsprogrammet för [!DNL Experience Manager] för skrivbordsappen igen.
+1. I Windows kan installationsprogrammet uppmana dig att installera `Visual Studio C++ Redistributable 2015`. Installera den genom att följa instruktionerna på skärmen. Om installationen misslyckas installerar du den manuellt. [Hämta installationsprogrammet](https://www.microsoft.com/en-us/download/details.aspx?id=52685) och installera både `vc_redist.x64.exe`- och `vc_redist.x86.exe`-filer. Kör installationsprogrammet för [!DNL Experience Manager] för skrivbordsappen igen.
 
 1. Starta om datorn enligt anvisningarna. Starta och konfigurera datorprogrammet.
 
@@ -82,7 +82,7 @@ Följ de här stegen för att installera skrivbordsappen. Avinstallera alla befi
    >
    >Kontrollera att det inte finns några inledande eller avslutande blanksteg före eller efter adressen till servern [!DNL Experience Manager]. Annars kan programmet inte ansluta till servern [!DNL Experience Manager].
 
-1. [Valfritt] Klicka på **[!UICONTROL I want to connect a different way]** och klicka på **[!UICONTROL Adobe login]** om du vill logga in på Experience Manager Assets-servern med Adobe Identity Management Service (IMS). Med IMS-inloggning kan skrivbordsappen utföra automatisk uppdatering av åtkomsttoken, så att användaren kan vara inloggad i upp till 14 dagar. Klicka på **[!UICONTROL Direct login]** om du vill utföra standardinloggningen på servern [!DNL Experience Manager] med användarens autentiseringsuppgifter.
+1. [Valfritt] Klicka på **[!UICONTROL I want to connect a different way]** och klicka på **[!UICONTROL Adobe login]** om du vill logga in på Experience Manager Assets-servern med hjälp av Adobe Identity Management Service (IMS). Med IMS-inloggning kan skrivbordsappen utföra automatisk uppdatering av åtkomsttoken, så att användaren kan vara inloggad i upp till 14 dagar. Klicka på **[!UICONTROL Direct login]** om du vill utföra standardinloggningen på servern [!DNL Experience Manager] med användarens autentiseringsuppgifter.
 
    ![Adobe-inloggning](assets/adobe-login.png)
 
@@ -92,7 +92,7 @@ Följ de här stegen för att installera skrivbordsappen. Avinstallera alla befi
 
    *Bild: Programmet visar DAM-innehållet efter inloggning*
 
-1. ([!DNL Experience Manager] 6.5.1 eller senare) Om du använder skrivbordsappen med [!DNL Experience Manager] 6.5.1 eller senare, uppgraderar du S3- eller Azure-anslutningen till version 1.10.4 eller senare. Se [Azure-anslutning](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/implementing/deploying/deploying/data-store-config#azure-data-store) eller [S3-anslutning](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/implementing/deploying/deploying/data-store-config#amazon-s-data-store).
+1. ([!DNL Experience Manager] 6.5.1 eller senare) Om du använder skrivbordsappen med [!DNL Experience Manager] 6.5.1 eller senare, uppgraderar du S3- eller Azure-anslutningen till version 1.10.4 eller senare. Se [Azure-anslutning](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/data-store-config#azure-data-store) eller [S3-anslutning](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/data-store-config#amazon-s-data-store).
 
    Om du är kund hos Adobe Managed Services (AMS) kontaktar du Adobe kundsupport.
 
@@ -112,7 +112,7 @@ Om du vill ändra inställningarna klickar du på ikonen ![Fler alternativ](asse
 
 * **[!UICONTROL Current cache size]**: Lagringsstorleken för de lokalt hämtade resurserna. Informationen visas först när resurserna har hämtats med appen.
 
-* **[!UICONTROL Automatically download linked assets]**: När du hämtar originalfilen hämtas automatiskt resurser som placerats i Creative Cloud-appar som stöds.
+* **[!UICONTROL Automatically download linked assets]**: När du hämtar originalfilen hämtas automatiskt resurser i Creative Cloud-appar som stöds.
 
 * **[!UICONTROL Maximum number of downloads]**: ![varningsikon](assets/do-not-localize/caution-icon.png) Ändra med försiktighet. När du hämtar resurser för första gången (via Visa, Öppna, Redigera, Hämta eller liknande) hämtas resurserna endast om gruppen innehåller mindre än det här antalet. Standardvärdet är 50. Ändra inte om du är osäker. Om du ökar värdet kan det leda till längre väntetider, och om du minskar det kan du förhindra att du hämtar alla nödvändiga resurser eller mappar i ett enda försök.
 
@@ -140,7 +140,7 @@ Om din proxy kräver autentisering kan IT-teamet tillåta att URL:en [!DNL Exper
 
 Så här avinstallerar du programmet i Windows:
 
-1. Överför alla dina ändringar till [!DNL Experience Manager] för att undvika att förlora redigeringar. Se [Redigera resurser och överföra uppdaterade resurser till [!DNL Experience Manager]](using.md#edit-assets-upload-updated-assets). Logga ut och [!UICONTROL Exit] appen.
+1. Överför alla dina ändringar till [!DNL Experience Manager] för att undvika att förlora redigeringar. Se [Redigera resurser och överföra uppdaterade resurser till [!DNL Experience Manager]](upload-assets.md#edit-assets-upload-updated-assets). Logga ut och [!UICONTROL Exit] appen.
 
 1. Ta bort appen när du tar bort andra operativsystemsprogram. Avinstallera det från Lägg till och ta bort program i Windows.
 
@@ -152,7 +152,7 @@ Så här avinstallerar du programmet i Windows:
 
 Så här avinstallerar du programmet på Mac:
 
-1. Överför alla dina ändringar till [!DNL Experience Manager] för att undvika att förlora redigeringar. Se [Redigera resurser och överföra uppdaterade resurser till [!DNL Experience Manager]](using.md#edit-assets-upload-updated-assets). Logga ut och [!UICONTROL Exit] appen.
+1. Överför alla dina ändringar till [!DNL Experience Manager] för att undvika att förlora redigeringar. Se [Redigera resurser och överföra uppdaterade resurser till [!DNL Experience Manager]](upload-assets.md#edit-assets-upload-updated-assets). Logga ut och [!UICONTROL Exit] appen.
 
 1. Ta bort `Adobe Experience Manager Desktop.app` från `/Applications`.
 
