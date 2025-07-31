@@ -60,7 +60,7 @@ Följ de här stegen för att installera skrivbordsappen. Avinstallera alla befi
 
 1. Om du uppgraderar från en annan version av appen läser du [Uppgradera skrivbordsappen](#upgrade-from-previous-version).
 
-1. Hoppa över det här steget om du använder [!DNL Experience Manager] som [!DNL Cloud Service], [!DNL Experience Manager] 6.4.4 eller senare eller [!DNL Experience Manager] 6.5.0 eller senare. Kontrollera att din [!DNL Experience Manager]-konfiguration uppfyller kompatibilitetskraven som anges i [versionsinformationen](release-notes.md). Om det behövs hämtar du det tillämpliga [kompatibilitetspaketet](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) och installerar det med pakethanteraren [!DNL Experience Manager] som en [!DNL Experience Manager]-administratör. Information om hur du installerar ett paket finns i [Så här arbetar du med paket](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager).
+1. Hoppa över det här steget om du använder [!DNL Experience Manager] som [!DNL Cloud Service], [!DNL Experience Manager] 6.4.4 eller senare eller [!DNL Experience Manager] 6.5.0 eller senare. Kontrollera att din [!DNL Experience Manager]-konfiguration uppfyller kompatibilitetskraven som anges i [versionsinformationen](release-notes.md). Om det behövs hämtar du det tillämpliga [kompatibilitetspaketet](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) och installerar det med pakethanteraren [!DNL Experience Manager] som en [!DNL Experience Manager]-administratör. Information om hur du installerar ett paket finns i [Så här arbetar du med paket](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager).
 
 1. Kör installationsprogrammets binärfil och följ instruktionerna på skärmen.
 
@@ -92,7 +92,7 @@ Följ de här stegen för att installera skrivbordsappen. Avinstallera alla befi
 
    *Bild: Programmet visar DAM-innehållet efter inloggning*
 
-1. ([!DNL Experience Manager] 6.5.1 eller senare) Om du använder skrivbordsappen med [!DNL Experience Manager] 6.5.1 eller senare, uppgraderar du S3- eller Azure-anslutningen till version 1.10.4 eller senare. Se [Azure-anslutning](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/data-store-config#azure-data-store) eller [S3-anslutning](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/data-store-config#amazon-s-data-store).
+1. ([!DNL Experience Manager] 6.5.1 eller senare) Om du använder skrivbordsappen med [!DNL Experience Manager] 6.5.1 eller senare, uppgraderar du S3- eller Azure-anslutningen till version 1.10.4 eller senare. Se [Azure-anslutning](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/implementing/deploying/deploying/data-store-config#azure-data-store) eller [S3-anslutning](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/implementing/deploying/deploying/data-store-config#amazon-s-data-store).
 
    Om du är kund hos Adobe Managed Services (AMS) kontaktar du Adobe kundsupport.
 
