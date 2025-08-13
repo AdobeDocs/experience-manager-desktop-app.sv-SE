@@ -68,8 +68,8 @@ Den här versionen innehåller flera förbättringar av Samlingar, Överföringa
 
 **De [!DNL Experience Manager] versioner** som stöds är:
 
-* [!DNL Experience Manager] som [!DNL Cloud Service]. Se [versionsinformation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/home).
-* [!DNL Experience Manager] 6.5.0 eller senare, på Adobe Managed Services (AMS) eller On-Premise. Se [versionsinformation för Service Pack](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/release-notes).
+* [!DNL Experience Manager] som [!DNL Cloud Service]. Se [versionsinformation](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/release-notes/home).
+* [!DNL Experience Manager] 6.5.0 eller senare, på Adobe Managed Services (AMS) eller On-Premise. Se [versionsinformation för Service Pack](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/release-notes/release-notes).
 
 Datorprogrammet [!DNL Adobe Experience Manager] är tillgängligt för följande **operativsystem**:
 
@@ -300,8 +300,8 @@ I följande diagram visas flödet av resurser och filer från molnet till det lo
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] som en [!DNL Cloud Service] dokumentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service)
->* [[!DNL Experience Manager] som en [!DNL Cloud Service] [!DNL Assets] dokumentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/overview)
+>* [[!DNL Experience Manager] som en [!DNL Cloud Service] dokumentation](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service)
+>* [[!DNL Experience Manager] som en [!DNL Cloud Service] [!DNL Assets] dokumentation](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/assets/overview)
 >* [Så här använder du [!DNL Experience Manager] datorprogrammet](using-desktop-app.md)
 >* [Installera och uppgradera datorprogrammet](install-upgrade.md)
 >* [God praxis och felsökningstips](troubleshoot.md)
