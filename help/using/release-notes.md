@@ -4,9 +4,9 @@ description: Versionsinformation, förbättringar, nya funktioner, kompatibilite
 mini-toc-levels: 1
 feature: Desktop App,Release Information
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: b1fad118e1ffbd0809afe9a33bcb848648cd8bdd
+source-git-commit: 3ee1e39553b81e335e07c278537a826df3ad9482
 workflow-type: tm+mt
-source-wordcount: '2470'
+source-wordcount: '2502'
 ht-degree: 0%
 
 ---
@@ -15,31 +15,61 @@ ht-degree: 0%
 
 Versionsinformationen för den senaste versionen av datorprogrammet, version 3.0.0, visas nedan. Lanseringsdatumet är 31 juli 2025.
 
-Den senaste versionen av skrivbordsappen innehåller följande felkorrigeringar och förbättringar:
+Den här versionen innehåller flera förbättringar av Samlingar, Överföringar, Checka in/Checka ut, Metadatahantering och övergripande användbarhet. Uppdateringarna effektiviserar, effektiviserar resurshanteringen och ger en mer intuitiv realtidsupplevelse i AEM-appen.
+
+![Användargränssnitt för datorprogram](assets/dekktop-app-user-interface.png)
+
+**Samlingar**
+
+* Nu kan du visa, hämta och bläddra bland samlingar.
+
+* Stöd för nedladdning av mappar i samlingar har lagts till.
+
+* Funktionen för automatisk synkronisering aktiverar nu hämtade resurser i samlingar för att regelbundet synkronisera AEM Asset Management med det lokala filsystemet.
+
+* När du uppdaterar en resurs som är en del av en samling uppdateras den automatiskt i den tillfälliga cachemappen och i skrivbordsappens användargränssnitt.
+
+**Överföringar**
 
 * Du kan överföra nyskapade resurser från din lokala dator till AEM, där den centrala databasen lagras, och visa dem i datorappen.
-* Funktionen för automatisk uppdatering uppdaterar automatiskt innehållet i realtid, så att du alltid ser den senaste informationen utan att behöva läsa in sidan manuellt och hämta listan över uppdaterade resurser.
-* Med hjälp av funktionen för att fästa och ta bort nålar i mappar kan du göra viktiga mappar lättillgängliga genom att fästa dem eller rensa visningen genom att ta bort dem när de inte längre behövs.
-* Med funktionen för namnbyte kan du enkelt uppdatera eller ändra titeln på en resurs, vilket hjälper dig att hålla namnen korrekta och ordnade i takt med att innehållet utvecklas.
-* Du kan bevara den ursprungliga filen och göra ändringar i en liknande fil genom att duplicera filer mellan lokala platser och molnplatser med åtgärden Duplicera filer.
-* Med hjälp av in- och utcheckningsfunktionen kan du hantera filåtkomst genom att låsa en fil för redigering (utcheckning) och spara ändringarna samtidigt som du gör den tillgänglig för andra (incheckning).
-* Du kan visa, hämta och bläddra bland samlingar.
-* Du kan tilldela metadata när du skapar en ny mapp.
-* Med Experience Manager Desktop App kan du nu flytta resurser och mappar till en ny plats samtidigt som du bevarar deras metadata, vilket hjälper dig att ordna och effektivisera filsystemet.
-* Stöd för nedladdning av mappar i samlingar har lagts till.
-* Med exportalternativet kan du nu hämta valda filer och mappar från skrivbordsappen till deras specifika målplats i en platt struktur.
+
 * Skrivbordsappen identifierar nu automatiskt nya filer som skapats i en mapp som redan har hämtats till ditt lokala filsystem och överför dem till AEM. Skrivbordsappen måste vara öppen för att identifiera de nya filerna i det lokala filsystemet.
-* Funktionen för automatisk synkronisering aktiverar nu hämtade resurser i samlingar för att regelbundet synkronisera AEM Asset Management med det lokala filsystemet.
-* I AEM Desktop App kan du nu visa mappegenskaper, t.ex. mappens miniatyrbild, storlek, sökväg, skapad den, taggar, metadata o.s.v.
-* Nu kan du komma åt resurser i kortvyn, stödrastervyn eller en trädvy för en ren, ordnad och visuellt tilltalande layout av resurser.
+
+**Incheckning och utcheckning**
+
+* Med hjälp av in- och utcheckningsfunktionen kan du hantera filåtkomst genom att låsa en fil för redigering (utcheckning) och spara ändringarna samtidigt som du gör den tillgänglig för andra (incheckning).
+
 * Möjlighet att dra en resurs från skrivbordsappen till Creative Cloud-målprogrammet. Skrivbordsappen checkar automatiskt ut resurserna och hämtar dem till det lokala filsystemet.
-* När du uppdaterar en resurs som är en del av en samling uppdateras den automatiskt i den tillfälliga cachemappen och i skrivbordsappens användargränssnitt.
+
+**Metadata**
+
+* Du kan tilldela metadata när du skapar en ny mapp.
+
+* Med Experience Manager Desktop App kan du nu flytta resurser och mappar till en ny plats samtidigt som du bevarar deras metadata, vilket hjälper dig att ordna och effektivisera filsystemet.
+
+* I AEM Desktop App kan du nu visa mappegenskaper, t.ex. mappens miniatyrbild, storlek, sökväg, skapad den, taggar, metadata o.s.v.
+
+**Användbarhetsförbättringar**
+
+
+* Funktionen för automatisk uppdatering uppdaterar automatiskt innehållet i realtid, så att du alltid ser den senaste informationen utan att behöva läsa in sidan manuellt och hämta listan över uppdaterade resurser.
+
+* Med hjälp av funktionen för att fästa och ta bort nålar i mappar kan du göra viktiga mappar lättillgängliga genom att fästa dem eller rensa visningen genom att ta bort dem när de inte längre behövs.
+
+* Med funktionen för namnbyte kan du enkelt uppdatera eller ändra titeln på en resurs, vilket hjälper dig att hålla namnen korrekta och ordnade i takt med att innehållet utvecklas.
+
+* Du kan bevara den ursprungliga filen och göra ändringar i en liknande fil genom att duplicera filer mellan lokala platser och molnplatser med åtgärden Duplicera filer.
+
+* Med exportalternativet kan du nu hämta valda filer och mappar från skrivbordsappen till deras specifika målplats i en platt struktur.
+
+* Nu kan du komma åt resurser i kortvyn, stödrastervyn eller en trädvy för en ren, ordnad och visuellt tilltalande layout av resurser.
+
 * Olika etiketter för olika alternativ uppdateras i användargränssnittet för att göra programmet mer intuitivt.
 
 **De [!DNL Experience Manager] versioner** som stöds är:
 
-* [!DNL Experience Manager] som [!DNL Cloud Service]. Se [versionsinformation](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/release-notes/home).
-* [!DNL Experience Manager] 6.5.0 eller senare, på Adobe Managed Services (AMS) eller On-Premise. Se [versionsinformation för Service Pack](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/release-notes/release-notes).
+* [!DNL Experience Manager] som [!DNL Cloud Service]. Se [versionsinformation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/home).
+* [!DNL Experience Manager] 6.5.0 eller senare, på Adobe Managed Services (AMS) eller On-Premise. Se [versionsinformation för Service Pack](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/release-notes).
 
 Datorprogrammet [!DNL Adobe Experience Manager] är tillgängligt för följande **operativsystem**:
 
@@ -270,8 +300,8 @@ I följande diagram visas flödet av resurser och filer från molnet till det lo
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] som en [!DNL Cloud Service] dokumentation](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service)
->* [[!DNL Experience Manager] som en [!DNL Cloud Service] [!DNL Assets] dokumentation](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/assets/overview)
+>* [[!DNL Experience Manager] som en [!DNL Cloud Service] dokumentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service)
+>* [[!DNL Experience Manager] som en [!DNL Cloud Service] [!DNL Assets] dokumentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/overview)
 >* [Så här använder du [!DNL Experience Manager] datorprogrammet](using-desktop-app.md)
 >* [Installera och uppgradera datorprogrammet](install-upgrade.md)
 >* [God praxis och felsökningstips](troubleshoot.md)
