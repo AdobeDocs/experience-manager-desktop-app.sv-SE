@@ -20,7 +20,7 @@ När du öppnar programmet efter utloggning eller för första gången anger du 
 
 De huvuduppgifter du utför med skrivbordsappen [!DNL Adobe Experience Manager] är:
 
-![Arbetsflöden och uppgifter som du kan utföra med [!DNL Experience Manager] skrivbordsappen ](assets/aem_desktop_app_usecases_v2.png)
+![Arbetsflöden och uppgifter som du kan utföra med [!DNL Experience Manager] skrivbordsappen &#x200B;](assets/aem_desktop_app_usecases_v2.png)
 
 ## Så här fungerar skrivbordsappen {#how-app-works2}
 

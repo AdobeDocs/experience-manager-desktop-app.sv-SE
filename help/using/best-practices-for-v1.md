@@ -21,7 +21,7 @@ Datorprogrammet monterar AEM Assets-databasen som en nätverksresurs på skrivbo
 
 >[!NOTE]
 >
->Innan du läser det här dokumentet kan du gå igenom den övergripande [AEM och Creative Cloud ](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/assets/administer/aem-cc-integration-best-practices) -integreringen för att få en översikt över ämnet på en högre nivå.
+>Innan du läser det här dokumentet kan du gå igenom den övergripande [AEM och Creative Cloud &#x200B;](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/assets/administer/aem-cc-integration-best-practices) -integreringen för att få en översikt över ämnet på en högre nivå.
 
 ## AEM datorprogramarkitektur {#aem-desktop-app-architecture}
 

@@ -87,7 +87,7 @@ Appen stöder proxykonfiguration i Mac och Windows. Konfigurationen läses när 
 
 1. Starta skrivbordsappen [!DNL Experience Manager]. Om du vill mappa din [!DNL Experience Manager]-instans med appen anger du [!DNL Experience Manager]-servern i formatet `https://[aem-server-url]:[port]`.
 
-   ![Autentisera på Mac och ange [!DNL Experience Manager] server-URL ](assets/aem_desktop_app_server_url.png)
+   ![Autentisera på Mac och ange [!DNL Experience Manager] server-URL &#x200B;](assets/aem_desktop_app_server_url.png)
 
 1. Ange användarnamn och lösenord för instansen på inloggningsskärmen. Om du vill ange en alternativ [!DNL Experience Manager]-instans markerar du alternativet **[!UICONTROL Alternate Login URL]**.
 
@@ -100,7 +100,7 @@ I Assets användargränssnitt kan du utforska resursplatserna eller checka ut oc
 1. I Assets-gränssnittet klickar/trycker du på ikonen Användare i det övre högra hörnet av verktygsfältet.
 1. Klicka på **[!UICONTROL My Preferences]** för att visa dialogrutan **[!UICONTROL Preferences]**.
 
-   Gränssnittet ![[!DNL Experience Manager] med användarinställningarna ](assets/aem_ui_user_preferences.png)
+   Gränssnittet ![[!DNL Experience Manager] med användarinställningarna &#x200B;](assets/aem_ui_user_preferences.png)
 
 1. I dialogrutan [!UICONTROL User Preferences] väljer du **[!UICONTROL Show Desktop Actions For Assets]** och klickar sedan på **[!UICONTROL Accept]**.
 
@@ -116,7 +116,7 @@ I Mac väljer du **Öppna** på snabbmenyn för att öppna en resurs via skrivbo
 
 För Adobe InDesign-filer (INDD) väljer du **[!UICONTROL Open]** på snabbmenyn. När du klickar på det här alternativet hämtar appen de länkade resurserna till ditt lokala filsystem och öppnar sedan INDD-filen i Adobe InDesign. Den här metoden ser till att nödvändiga resurser är lokalt tillgängliga när du redigerar INDD-filen.
 
-![Alternativ på snabbmenyn för att komma åt och öppna resurser med [!DNL Experience Manager] skrivbordsappen ](assets/aem_desktopapp_mac_context_menu.png)
+![Alternativ på snabbmenyn för att komma åt och öppna resurser med [!DNL Experience Manager] skrivbordsappen &#x200B;](assets/aem_desktopapp_mac_context_menu.png)
 
 *Bild: Alternativ på snabbmenyn för att komma åt och öppna resurser med [!DNL Experience Manager]-datorprogrammet.*
 
@@ -185,7 +185,7 @@ Med appen kan du checka ut resursfiler för att förhindra att andra användare 
 
 1. På snabbmenyn för Mac väljer du alternativet Öppna AEM Assets-mapp för att öppna Finder.
 
-   ![Alternativ på snabbmenyn för att komma åt och öppna resurser med [!DNL Experience Manager] skrivbordsappen ](assets/aem_desktopapp_mac_context_menu.png)
+   ![Alternativ på snabbmenyn för att komma åt och öppna resurser med [!DNL Experience Manager] skrivbordsappen &#x200B;](assets/aem_desktopapp_mac_context_menu.png)
 
    *Bild: Alternativ på snabbmenyn för att komma åt och öppna resurser med [!DNL Experience Manager]-datorprogrammet.*
 

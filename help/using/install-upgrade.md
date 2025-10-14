@@ -72,7 +72,7 @@ Följ de här stegen för att installera skrivbordsappen. Avinstallera alla befi
 
    Klicka på **[!UICONTROL Connect]** och ange autentiseringsuppgifterna.
 
-   ![Anslutningsskärmen för skrivbordsprogrammet till indataserveradressen ](assets/connect_da2.png)
+   ![Anslutningsskärmen för skrivbordsprogrammet till indataserveradressen &#x200B;](assets/connect_da2.png)
 
    *Bild: Anslutningsskärmen till indataserveradressen.*
 
@@ -98,7 +98,7 @@ Följ de här stegen för att installera skrivbordsappen. Avinstallera alla befi
 
 ## Ange inställningar {#set-preferences}
 
-Om du vill ändra inställningarna klickar du på ikonen ![Fler alternativ](assets/do-not-localize/more_options_da2.png) och **[!UICONTROL Preference]** ![Inställningar ](assets/do-not-localize/preferences_icon_da2.png) . Justera värdena för följande i fönstret **[!UICONTROL Preferences]**:
+Om du vill ändra inställningarna klickar du på ikonen ![Fler alternativ](assets/do-not-localize/more_options_da2.png) och **[!UICONTROL Preference]** ![Inställningar &#x200B;](assets/do-not-localize/preferences_icon_da2.png) . Justera värdena för följande i fönstret **[!UICONTROL Preferences]**:
 
 * [!UICONTROL Launch the application on logon].
 
