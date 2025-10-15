@@ -16,7 +16,7 @@ Adobe erbjuder sammankopplade arbetsflöden i alla sina lösningar för att ge p
 
 Med appen är resurserna i [!DNL Experience Manager Assets] enkelt tillgängliga på ditt lokala skrivbord och kan användas i alla skrivbordsprogram. Du kan öppna och redigera resurserna i de skrivbordsprogram du väljer. Lokala redigeringar sparas bara som en ny version i [!DNL Experience Manager] när du överför ändringarna, vilket möjliggör effektiv redigering av pågående arbete på skrivbordet. Appen har stöd för överföring av resurser och kapslade mappar till [!DNL Experience Manager], vilket gör det enklare att lägga till nytt innehåll i databasen.
 
-En sådan integrering tillåter olika roller i organisationen att hantera resurserna centralt i [!DNL Experience Manager Assets]. Marknadsförare och affärsanvändare kan följa de olika standarderna, inklusive varumärken och licenser. Creative-användare med ett dedikerat [Adobe Asset Link](https://business.adobe.com/products/experience-manager/assets/adobe-asset-link.html)-verktyg kan komma åt resurser i Adobe Photoshop, Illustrator och InDesign och kan även komma åt resurser på datorn i Creative Cloud och andra program.
+En sådan integrering tillåter olika roller i organisationen att hantera resurserna centralt i [!DNL Experience Manager Assets]. Marknadsförare och affärsanvändare kan följa de olika standarderna, inklusive varumärken och licenser. Creative-användare med ett dedikerat [Adobe Asset Link](https://business.adobe.com/se/products/experience-manager/assets/adobe-asset-link.html)-verktyg kan komma åt resurser i Adobe Photoshop, Illustrator och InDesign och kan även komma åt resurser på datorn i Creative Cloud och andra program.
 
 >[!NOTE]
 >
