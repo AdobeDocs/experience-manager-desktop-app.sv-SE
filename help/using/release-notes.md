@@ -4,72 +4,37 @@ description: Versionsinformation, förbättringar, nya funktioner, kompatibilite
 mini-toc-levels: 1
 feature: Desktop App,Release Information
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: 3ee1e39553b81e335e07c278537a826df3ad9482
+source-git-commit: 64c918a17efd082aee2d63f1379023b1da05a13b
 workflow-type: tm+mt
-source-wordcount: '2502'
+source-wordcount: '2662'
 ht-degree: 0%
 
 ---
 
-# Versionsinformation för [!DNL Adobe Experience Manager]-datorprogrammet {#release-notes-v2}
+# Versionsinformation för [!DNL Adobe Experience Manager] skrivbordsapp {#release-notes-v2}
 
-Versionsinformationen för den senaste versionen av datorprogrammet, version 3.0.0, visas nedan. Lanseringsdatumet är 31 juli 2025.
+Versionsdatumet för datorprogrammet version 3.0.1 är 18 december 2025.  Versionen innehåller följande förbättringar:
 
-Den här versionen innehåller flera förbättringar av Samlingar, Överföringar, Checka in/Checka ut, Metadatahantering och övergripande användbarhet. Uppdateringarna effektiviserar, effektiviserar resurshanteringen och ger en mer intuitiv realtidsupplevelse i AEM-appen.
+**Smidigare och mer tillförlitliga arbetsflöden**
 
-![Användargränssnitt för datorprogram](assets/dekktop-app-user-interface.png)
+* Enhetlig namngivning av mappar säkerställs genom att synkroniseringsproblem mellan AEM Desktop App och AEM Author åtgärdas.
+* Aktiverade oavbrutna arbetsflöden genom att tillåta fullständig programfunktionalitet under aktiva överföringsåtgärder.
+* Förbättrad tillförlitlighet för mappegenskapssidan, vilket ger konsekvent åtkomst till mappmetadata och inställningar.
 
-**Samlingar**
+**Snabbare och mer responsiv användarupplevelse**
 
-* Nu kan du visa, hämta och bläddra bland samlingar.
+* Förbättrade svarstider för användargränssnittet genom att ersätta blockerande I/O med asynkron bearbetning, vilket ger en smidigare upplevelse under högbelastade åtgärder.
+* Förbättrade stora filöverföringar genom att införa sidnumrering i överförings- och hämtningsflöden, vilket möjliggör effektiv hantering av stora datamängder.
 
-* Stöd för nedladdning av mappar i samlingar har lagts till.
+**Starkare stabilitet och tillförlitlighet**
 
-* Funktionen för automatisk synkronisering aktiverar nu hämtade resurser i samlingar för att regelbundet synkronisera AEM Asset Management med det lokala filsystemet.
-
-* När du uppdaterar en resurs som är en del av en samling uppdateras den automatiskt i den tillfälliga cachemappen och i skrivbordsappens användargränssnitt.
-
-**Överföringar**
-
-* Du kan överföra nyskapade resurser från din lokala dator till AEM, där den centrala databasen lagras, och visa dem i datorappen.
-
-* Skrivbordsappen identifierar nu automatiskt nya filer som skapats i en mapp som redan har hämtats till ditt lokala filsystem och överför dem till AEM. Skrivbordsappen måste vara öppen för att identifiera de nya filerna i det lokala filsystemet.
-
-**Incheckning och utcheckning**
-
-* Med hjälp av in- och utcheckningsfunktionen kan du hantera filåtkomst genom att låsa en fil för redigering (utcheckning) och spara ändringarna samtidigt som du gör den tillgänglig för andra (incheckning).
-
-* Möjlighet att dra en resurs från skrivbordsappen till Creative Cloud-målprogrammet. Skrivbordsappen checkar automatiskt ut resurserna och hämtar dem till det lokala filsystemet.
-
-**Metadata**
-
-* Du kan tilldela metadata när du skapar en ny mapp.
-
-* Med Experience Manager Desktop App kan du nu flytta resurser och mappar till en ny plats samtidigt som du bevarar deras metadata, vilket hjälper dig att ordna och effektivisera filsystemet.
-
-* I AEM Desktop App kan du nu visa mappegenskaper, t.ex. mappens miniatyrbild, storlek, sökväg, skapad den, taggar, metadata o.s.v.
-
-**Användbarhetsförbättringar**
-
-
-* Funktionen för automatisk uppdatering uppdaterar automatiskt innehållet i realtid, så att du alltid ser den senaste informationen utan att behöva läsa in sidan manuellt och hämta listan över uppdaterade resurser.
-
-* Med hjälp av funktionen för att fästa och ta bort nålar i mappar kan du göra viktiga mappar lättillgängliga genom att fästa dem eller rensa visningen genom att ta bort dem när de inte längre behövs.
-
-* Med funktionen för namnbyte kan du enkelt uppdatera eller ändra titeln på en resurs, vilket hjälper dig att hålla namnen korrekta och ordnade i takt med att innehållet utvecklas.
-
-* Du kan bevara den ursprungliga filen och göra ändringar i en liknande fil genom att duplicera filer mellan lokala platser och molnplatser med åtgärden Duplicera filer.
-
-* Med exportalternativet kan du nu hämta valda filer och mappar från skrivbordsappen till deras specifika målplats i en platt struktur.
-
-* Nu kan du komma åt resurser i kortvyn, stödrastervyn eller en trädvy för en ren, ordnad och visuellt tilltalande layout av resurser.
-
-* Olika etiketter för olika alternativ uppdateras i användargränssnittet för att göra programmet mer intuitivt.
+* Löste omstarter av Author-servern som utlösts av skrivbordsappsinteraktioner, vilket avsevärt förbättrar systemstabiliteten.
+* Ett program kraschar vid hämtning eller överföring av stora mappar (tusentals filer).
 
 **De [!DNL Experience Manager] versioner** som stöds är:
 
-* [!DNL Experience Manager] som [!DNL Cloud Service]. Se [versionsinformation](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/release-notes/home).
-* [!DNL Experience Manager] 6.5.0 eller senare, på Adobe Managed Services (AMS) eller On-Premise. Se [versionsinformation för Service Pack](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/release-notes/release-notes).
+* [!DNL Experience Manager] som [!DNL Cloud Service]. Se [versionsinformation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/home).
+* [!DNL Experience Manager] 6.5.0 eller senare, på Adobe Managed Services (AMS) eller On-Premise. Se [versionsinformation för Service Pack](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/release-notes).
 
 Datorprogrammet [!DNL Adobe Experience Manager] är tillgängligt för följande **operativsystem**:
 
@@ -82,6 +47,10 @@ Två versioner av Windows-installationsprogrammet finns för AEM Desktop App ver
 
 | Operativsystem | [!DNL Experience Manager] som en [!DNL Cloud Service] | [!DNL Experience Manager] 6.x |
 |---|---|---|
+| macOS (v3.0.1) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-x64-3.0.1.dmg) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-x64-3.0.1.dmg) |
+| macOS Apple Silicon (M1) (v3.0.1) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-arm64-3.0.1.dmg) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-arm64-3.0.1.dmg) |
+| Windows 64-bitars (v3.0.1) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win-x64-3.0.1.exe) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win-x64-3.0.1.exe) |
+| Windows 64-bitars Enterprise (v3.0.1) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win-x64-ent-3.0.1.msi) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win-x64-ent-3.0.1.msi) |
 | macOS (v3.0.0) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-x64-3.0.0.dmg) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-x64-3.0.0.dmg) |
 | macOS Apple Silicon (M1) (v3.0.0) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-arm64-3.0.0.dmg) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-arm64-3.0.0.dmg) |
 | Windows 64-bitars (v3.0.0) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win-x64-3.0.0.exe) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win-x64-3.0.0.exe) |
@@ -138,25 +107,77 @@ Funktionen stöds i versionerna [!DNL Adobe Creative Cloud] 2018 och [!DNL Adobe
 
 ## Nya funktioner, förbättringar och felkorrigeringar {#what-is-new}
 
-Mer information finns i [Nyheter i v2.0](introduction.md#whats-new-v2).
+Mer information finns i [Nyheter i v3.0.1](introduction.md#whats-new-v2).
 
-**Uppdateringar i app v2.3.1**
+### Uppdateringar i app v3.0.0 {#app-version-3.0.0}
+
+Den här versionen innehåller flera förbättringar av Samlingar, Överföringar, Checka in/Checka ut, Metadatahantering och övergripande användbarhet. Uppdateringarna effektiviserar, effektiviserar resurshanteringen och ger en mer intuitiv realtidsupplevelse i AEM-appen.
+
+![Användargränssnitt för datorprogram](assets/dekktop-app-user-interface.png)
+
+**Samlingar**
+
+* Nu kan du visa, hämta och bläddra bland samlingar.
+
+* Stöd för nedladdning av mappar i samlingar har lagts till.
+
+* Funktionen för automatisk synkronisering aktiverar nu hämtade resurser i samlingar för att regelbundet synkronisera AEM Asset Management med det lokala filsystemet.
+
+* När du uppdaterar en resurs som är en del av en samling uppdateras den automatiskt i den tillfälliga cachemappen och i skrivbordsappens användargränssnitt.
+
+**Överföringar**
+
+* Du kan överföra nyskapade resurser från din lokala dator till AEM, där den centrala databasen lagras, och visa dem i datorappen.
+
+* Skrivbordsappen identifierar nu automatiskt nya filer som skapats i en mapp som redan har hämtats till ditt lokala filsystem och överför dem till AEM. Skrivbordsappen måste vara öppen för att identifiera de nya filerna i det lokala filsystemet.
+
+**Incheckning och utcheckning**
+
+* Med hjälp av in- och utcheckningsfunktionen kan du hantera filåtkomst genom att låsa en fil för redigering (utcheckning) och spara ändringarna samtidigt som du gör den tillgänglig för andra (incheckning).
+
+* Möjlighet att dra en resurs från skrivbordsappen till Creative Cloud-målprogrammet. Skrivbordsappen checkar automatiskt ut resurserna och hämtar dem till det lokala filsystemet.
+
+**Metadata**
+
+* Du kan tilldela metadata när du skapar en ny mapp.
+
+* Med Experience Manager Desktop App kan du nu flytta resurser och mappar till en ny plats samtidigt som du bevarar deras metadata, vilket hjälper dig att ordna och effektivisera filsystemet.
+
+* I AEM Desktop App kan du nu visa mappegenskaper, t.ex. mappens miniatyrbild, storlek, sökväg, skapad den, taggar, metadata o.s.v.
+
+**Användbarhetsförbättringar**
+
+* Funktionen för automatisk uppdatering uppdaterar automatiskt innehållet i realtid, så att du alltid ser den senaste informationen utan att behöva läsa in sidan manuellt och hämta listan över uppdaterade resurser.
+
+* Med hjälp av funktionen för att fästa och ta bort nålar i mappar kan du göra viktiga mappar lättillgängliga genom att fästa dem eller rensa visningen genom att ta bort dem när de inte längre behövs.
+
+* Med funktionen för namnbyte kan du enkelt uppdatera eller ändra titeln på en resurs, vilket hjälper dig att hålla namnen korrekta och ordnade i takt med att innehållet utvecklas.
+
+* Du kan bevara den ursprungliga filen och göra ändringar i en liknande fil genom att duplicera filer mellan lokala platser och molnplatser med åtgärden Duplicera filer.
+
+* Med exportalternativet kan du nu hämta valda filer och mappar från skrivbordsappen till deras specifika målplats i en platt struktur.
+
+* Nu kan du komma åt resurser i kortvyn, stödrastervyn eller en trädvy för en ren, ordnad och visuellt tilltalande layout av resurser.
+
+* Olika etiketter för olika alternativ uppdateras i användargränssnittet för att göra programmet mer intuitivt.
+
+### Uppdateringar i app v2.3.1 {#app-version-2.3.1}
 
 * Det nya installationsprogrammet för Enterprise Windows installerar programmet under Program Files.
 * Stöd för **grundläggande autentisering** under inloggning med AEM och enkel inloggning.
 * Konfigurerbart antal resurser som tillåts under överföring
 
-**Uppdateringar i app v2.3.0**
+### Uppdateringar i app v2.3.0 {#app-version-2.3.0}
 
 * Stöd för IMS-inloggning har lagts till. Med IMS-integrering kan skrivbordsappen utföra automatisk uppdatering av åtkomsttoken, vilket gör att användaren kan vara inloggad i upp till 14 dagar.
 
 * Förbättrat stöd för företagsutkast och webbfiltrering.
 
-**Uppdateringar i app v2.2.2**
+### Uppdateringar i app v2.2.2 {#app-version-2.2.2}
 
 * (Endast Windows) Skrivbordsappen visar en tom skärm efter installation av versionerna 2.2.0 och 2.2.1.
 
-**Uppdateringar i app v2.2.1**
+### Uppdateringar i app v2.2.1 {#app-version-2.2.1}
 
 * Skrivbordsappen visar ett meddelande om timeout för session när du klickar på **[!UICONTROL Sign In]**.
 
@@ -164,41 +185,41 @@ Mer information finns i [Nyheter i v2.0](introduction.md#whats-new-v2).
 
 * Skrivbordsappen visar ett felmeddelande när du sorterar resurser genom att klicka på **[!UICONTROL Edited Locally]**.
 
-**Uppdateringar i app v2.2.0**
+### Uppdateringar i app v2.2.0 {#app-version-2.2.0}
 
 * Stöd för Apple Silicon (M1).
 
 * Möjlighet att komma ihåg anslutningssträngen när du loggar in på datorprogrammet.
 
-**Uppdateringar i app v2.1.5.0**
+### Uppdateringar i app v2.1.5.0 {#app-version-2.1.5.0}
 
 * Skrivbordsappen slutar svara när du överför filer i en mapp som innehåller kinesiska tecken (ASSETS-9237).
 
-* datorprogrammet ersätter punkter med streck i filnamn (ASSETS-10955).
+* Skrivbordsappen ersätter punkter med streck i filnamn (ASSETS-10955).
 
-**Uppdateringar i app v2.1.4.0**
+### Uppdateringar i app v2.1.4.0 {#app-version-2.1.4.0}
 
 I den nya versionen av programmet finns felkorrigeringar.
 
-**Uppdateringar i app v2.1.3.4**
+### Uppdateringar i app v2.1.3.4 {#app-version-2.1.3.4}
 
 Den nya versionen av programmet innehåller en felkorrigering.
 
-**Uppdateringar i app v2.1.3.3**
+### Uppdateringar i app v2.1.3.3 {#app-version-2.1.3.3}
 
 Den nya versionen av programmet innehåller en felkorrigering.
 
-**Uppdateringar i app v2.1.3.2**
+### Uppdateringar i app v2.1.3.2 {#app-version-2.1.3.2}
 
 I den här versionen av programmet finns en felkorrigering.
 
-**Uppdateringar i app v2.1.3.1**
+### Uppdateringar i app v2.1.3.1 {#app-version-2.1.3.1}
 
 Felet som har åtgärdats i den här versionen är:
 
 * Överförings- och nedladdningshastigheterna har förbättrats, även med stora resurser. Den här versionen åtgärdade ett problem där resursöverföringar med [!DNL desktop app] ibland misslyckades när mycket stora filer överfördes.
 
-**Uppdatering i app v2.1.2.0**
+### Uppdateringar i app v2.1.2.0 {#app-version-2.1.2.0}
 
 * Ett nytt alternativ för [!UICONTROL Clear Cookies] läggs till på programmets huvudmeny. Det hjälper vid potentiella inloggningsproblem, t.ex. när en anslutning ändras från en server till en annan. Se [rensa cookies innan du ansluter](/help/using/troubleshoot.md#cannot-login-cookies-issue).
 
@@ -206,21 +227,21 @@ Felet som har åtgärdats i den här versionen är:
 
   Det här beteendet liknar standardbeteendet i version 1 av datorprogrammet. Om alternativet inte är aktiverat i den aktuella versionen ersätts blanksteg och tecknen `% ; # , + ? ^ { } "` i mappnamn med bindestreck i mappsökvägar. Versaler konverteras också till gemener i mappsökvägar. I filnamn ersätts dock tecknen `# % { } ? &` med bindestreck, men blanksteg och versaler behålls. Mer information finns i [appinställningar](/help/using/install-upgrade.md#set-preferences) och [Överför och lägg till nya resurser](/help/using/upload-assets.md#upload-and-add-new-assets-to-aem).
 
-**Uppdatering i app v2.1.1.0**
+### Uppdateringar i app v2.1.1.0 {#app-version-2.1.1.0}
 
 * Med en avancerad inställning kan appen emulera beteendet v1.10 när mappar överförs. I v1.10 respekterar de nodnamn som skapas i databasen utrymmet och skiftläget för mappnamnen som anges av användaren. I version 2.1 är standardbeteendet oförändrat: flera mellanslag i mappnamn ersätts med bindestreck i databasens nodnamn, och nodnamn konverteras till gemener. Se [appinställningarna](/help/using/install-upgrade.md#set-preferences).
 
-**Uppdatering i app v2.1.0.0**
+### Uppdateringar i app v2.1.0.0 {#app-version-2.1.0.0}
 
 * Om du vill överföra resurser kan användare nu dra filer eller mappar i programmets gränssnitt, direkt från Utforskaren i Windows eller Mac Finder. Den här processen fungerar utöver det överföringsalternativ som är tillgängligt i programmet. Se [Överför resurser](/help/using/upload-assets.md#upload-and-add-new-assets-to-aem) <!-- CQ-4309527 -->
 
-**Uppdatering i app v2.0.3**
+### Uppdateringar i app v2.0.3 {#app-version-2.0.3}
 
 Felet som har åtgärdats i den här versionen är:
 
 * Ett inloggningsproblem har korrigerats för appanvändare i Windows som försöker få åtkomst till DAM-databasen på [!DNL Adobe Experience Manager] 6.5.5.0.
 
-**Uppdateringar i app v2.0.2**
+### Uppdateringar i app v2.0.2 {#app-version-2.0.2}
 
 Felkorrigeringarna och uppdateringarna är:
 
@@ -234,7 +255,7 @@ Felkorrigeringarna och uppdateringarna är:
 
 * (Windows) Korrigerade ett sällsynt problem med oanvändbart appgränssnitt på vissa Windows-datorer. Användarna kan inte klicka på appgränssnittet eftersom det ser ut att vara förvrängt av klickområdet för gränssnittselementen &quot;shifts&quot;. <!-- CQ-4280785 -->
 
-**Uppdateringar i app v2.0.1**
+### Uppdateringar i app v2.0.1 {#app-version-2.0.1}
 
 Felkorrigeringarna och uppdateringarna är:
 
@@ -300,8 +321,8 @@ I följande diagram visas flödet av resurser och filer från molnet till det lo
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] som en [!DNL Cloud Service] dokumentation](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service)
->* [[!DNL Experience Manager] som en [!DNL Cloud Service] [!DNL Assets] dokumentation](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/assets/overview)
+>* [[!DNL Experience Manager] som en [!DNL Cloud Service] dokumentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service)
+>* [[!DNL Experience Manager] som en [!DNL Cloud Service] [!DNL Assets] dokumentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/overview)
 >* [Så här använder du [!DNL Experience Manager] datorprogrammet](using-desktop-app.md)
 >* [Installera och uppgradera datorprogrammet](install-upgrade.md)
 >* [God praxis och felsökningstips](troubleshoot.md)
