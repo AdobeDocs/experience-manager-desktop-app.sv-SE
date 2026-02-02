@@ -2,13 +2,13 @@
 title: Kom igång [!DNL Experience Manager] med datorprogrammet
 description: Läs om hur  [!DNL Experience Manager] datorprogrammet förbättrar framtagning och publicering av innehåll med smidiga arbetsflöden och produktivitetsfunktioner.
 feature: Desktop App,Asset Management
-source-git-commit: 2947fbd3bfeb15b37a8f1b0118e969b5d70499d0
+exl-id: 6cf29b6a-74e6-4860-a25b-d3e91abbaa9d
+source-git-commit: a579ab861aa0af8c8415a0f38126de7f33c7a7b3
 workflow-type: tm+mt
 source-wordcount: '1213'
 ht-degree: 0%
 
 ---
-
 
 # Kom igång med [!DNL Adobe Experience Manager]-datorprogrammet {#getting-started-desktop-app}
 
@@ -18,9 +18,11 @@ Integreringen gör att olika roller i organisationen kan hantera resurser centra
 
 När du öppnar programmet efter utloggning eller för första gången anger du URL-adressen till [!DNL Experience Manager]-servern i formatet `https://[aem-server-url]:[port]/`. Välj sedan alternativet [!UICONTROL Connect]. Ange autentiseringsuppgifter för att ansluta programmet till servern.
 
+>[!VIDEO](https://video.tv.adobe.com/v/28868?quality=12&learn=on)
+
 De huvuduppgifter du utför med skrivbordsappen [!DNL Adobe Experience Manager] är:
 
-![Arbetsflöden och uppgifter som du kan utföra med [!DNL Experience Manager] skrivbordsappen &#x200B;](assets/aem_desktop_app_usecases_v2.png)
+![Arbetsflöden och uppgifter som du kan utföra med [!DNL Experience Manager] skrivbordsappen ](assets/aem_desktop_app_usecases_v2.png)
 
 ## Så här fungerar skrivbordsappen {#how-app-works2}
 
@@ -98,11 +100,11 @@ Du kan tvärtom öppna resursen i webbgränssnittet från skrivbordsappen med å
 
 ## Nästa steg {#next-steps}
 
-* [Titta på en video för att komma igång med Adobe Experience Manager-datorprogrammet](https://experienceleague.adobe.com/sv/docs/experience-manager-learn/assets/creative-workflows/aem-desktop-app)
+* [Titta på en video för att komma igång med Adobe Experience Manager-datorprogrammet](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/creative-workflows/aem-desktop-app)
 
 * Ge feedback om dokumentationen med [!UICONTROL Edit this page] ![redigera sidan](assets/do-not-localize/edit-page.png) eller [!UICONTROL Log an issue] ![skapa ett GitHub-problem](assets/do-not-localize/github-issue.png) som är tillgängligt på den högra sidopanelen
 
-* Kontakta [kundtjänst](https://experienceleague.adobe.com/sv?support-solution=General#support)
+* Kontakta [kundtjänst](https://experienceleague.adobe.com/?support-solution=General#support)
 
 >[!MORELIKETHIS]
 >
