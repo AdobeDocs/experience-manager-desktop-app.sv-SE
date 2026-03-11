@@ -4,37 +4,21 @@ description: Versionsinformation, förbättringar, nya funktioner, kompatibilite
 mini-toc-levels: 1
 feature: Desktop App,Release Information
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: ad234d05e7a011b148b74e92adcbf86de476f78d
+source-git-commit: 826e667f11792797629e0edad5db62aea6f61774
 workflow-type: tm+mt
-source-wordcount: '2662'
+source-wordcount: '5259'
 ht-degree: 0%
 
 ---
 
 # Versionsinformation för [!DNL Adobe Experience Manager] skrivbordsapp {#release-notes-v2}
 
-Versionsdatumet för datorprogrammet version 3.0.1 är 20 december 2025.  Versionen innehåller följande förbättringar:
-
-**Smidigare och mer tillförlitliga arbetsflöden**
-
-* Enhetlig namngivning av mappar säkerställs genom att synkroniseringsproblem mellan AEM Desktop App och AEM Author åtgärdas.
-* Aktiverade oavbrutna arbetsflöden genom att tillåta fullständig programfunktionalitet under aktiva överföringsåtgärder.
-* Förbättrad tillförlitlighet för mappegenskapssidan, vilket ger konsekvent åtkomst till mappmetadata och inställningar.
-
-**Snabbare och mer responsiv användarupplevelse**
-
-* Förbättrade svarstider för användargränssnittet genom att ersätta blockerande I/O med asynkron bearbetning, vilket ger en smidigare upplevelse under högbelastade åtgärder.
-* Förbättrade stora filöverföringar genom att införa sidnumrering i överförings- och hämtningsflöden, vilket möjliggör effektiv hantering av stora datamängder.
-
-**Starkare stabilitet och tillförlitlighet**
-
-* Löste omstarter av Author-servern som utlösts av skrivbordsappsinteraktioner, vilket avsevärt förbättrar systemstabiliteten.
-* Ett program kraschar vid hämtning eller överföring av stora mappar (tusentals filer).
+Den här versionen av datorprogrammet, version 3.0.2, innehåller felkorrigeringar som förbättrar programmets övergripande stabilitet och prestanda.
 
 **De [!DNL Experience Manager] versioner** som stöds är:
 
-* [!DNL Experience Manager] som [!DNL Cloud Service]. Se [versionsinformation](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/release-notes/home).
-* [!DNL Experience Manager] 6.5.0 eller senare, på Adobe Managed Services (AMS) eller On-Premise. Se [versionsinformation för Service Pack](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/release-notes/release-notes).
+* [!DNL Experience Manager] som [!DNL Cloud Service]. Se [versionsinformation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/home).
+* [!DNL Experience Manager] 6.5.0 eller senare, på Adobe Managed Services (AMS) eller On-Premise. Se [versionsinformation för Service Pack](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/release-notes).
 
 Datorprogrammet [!DNL Adobe Experience Manager] är tillgängligt för följande **operativsystem**:
 
@@ -47,6 +31,10 @@ Två versioner av Windows-installationsprogrammet finns för AEM Desktop App ver
 
 | Operativsystem | [!DNL Experience Manager] som en [!DNL Cloud Service] | [!DNL Experience Manager] 6.x |
 |---|---|---|
+| macOS (v3.0.2) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-x64-3.0.2.dmg) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-x64-3.0.2.dmg) |
+| macOS Apple Silicon (M1) (v3.0.2) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-arm64-3.0.2.dmg) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-arm64-3.0.2.dmg) |
+| Windows 64-bitars (v3.0.2) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win-x64-3.0.2.exe) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win-x64-3.0.2.exe) |
+| Windows 64-bitars Enterprise (v3.0.2) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win-x64-ent-3.0.2.msi) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win-x64-ent-3.0.2.msi) |
 | macOS (v3.0.1) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-x64-3.0.1.dmg) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-x64-3.0.1.dmg) |
 | macOS Apple Silicon (M1) (v3.0.1) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-arm64-3.0.1.dmg) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-arm64-3.0.1.dmg) |
 | Windows 64-bitars (v3.0.1) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win-x64-3.0.1.exe) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win-x64-3.0.1.exe) |
@@ -107,7 +95,27 @@ Funktionen stöds i versionerna [!DNL Adobe Creative Cloud] 2018 och [!DNL Adobe
 
 ## Nya funktioner, förbättringar och felkorrigeringar {#what-is-new}
 
-Mer information finns i [Nyheter i v3.0.1](introduction.md#whats-new-v2).
+Mer information finns i [Nyheter i v3.0.2](introduction.md#whats-new-v2).
+
+### Uppdateringar i app v3.0.1 {#app-version-3.0.1}
+
+Versionen av datorprogrammet version 3.0.1 innehåller följande förbättringar:
+
+**Smidigare och mer tillförlitliga arbetsflöden**
+
+* Enhetlig namngivning av mappar säkerställs genom att synkroniseringsproblem mellan AEM Desktop App och AEM Author åtgärdas.
+* Aktiverade oavbrutna arbetsflöden genom att tillåta fullständig programfunktionalitet under aktiva överföringsåtgärder.
+* Förbättrad tillförlitlighet för mappegenskapssidan, vilket ger konsekvent åtkomst till mappmetadata och inställningar.
+
+**Snabbare och mer responsiv användarupplevelse**
+
+* Förbättrade svarstider för användargränssnittet genom att ersätta blockerande I/O med asynkron bearbetning, vilket ger en smidigare upplevelse under högbelastade åtgärder.
+* Förbättrade stora filöverföringar genom att införa sidnumrering i överförings- och hämtningsflöden, vilket möjliggör effektiv hantering av stora datamängder.
+
+**Starkare stabilitet och tillförlitlighet**
+
+* Löste omstarter av Author-servern som utlösts av skrivbordsappsinteraktioner, vilket avsevärt förbättrar systemstabiliteten.
+* Ett program kraschar vid hämtning eller överföring av stora mappar (tusentals filer).
 
 ### Uppdateringar i app v3.0.0 {#app-version-3.0.0}
 
@@ -287,7 +295,7 @@ Det är viktigt att du förstår följande om programmet och hur det fungerar.
 
 * Om programmet inte visar det förväntade resultatet klickar du på uppdateringsikonen i det övre fältet.
 
-* Den lokala nätverksresursen, som visas när du använder åtgärden [!UICONTROL Reveal File], visar bara filer (och mappar) som är tillgängliga lokalt. [!UICONTROL Reveal File] och [!UICONTROL Reveal Folder] hämtar resurser i förväg för att det ska gå att visa rätt resurser i den lokala nätverksresursen.
+* Den lokala nätverksresursen, som visas när du använder åtgärden [!UICONTROL Reveal File], visar bara filer (och mappar) som är tillgängliga lokalt. [!UICONTROL Reveal File] och [!UICONTROL Reveal Folder] hämtar resurser i förväg för att hjälpa till att visa rätt resurser i den lokala nätverksresursen.
 
 * Den lokala nätverksresursen SMB (Mac)/WebDAV (Win) används när en Adobe Creative Cloud-app läser resursfilerna som är länkade/placerade i en intern fil i Creative Cloud-appen.
 
@@ -321,8 +329,8 @@ I följande diagram visas flödet av resurser och filer från molnet till det lo
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] som en [!DNL Cloud Service] dokumentation](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service)
->* [[!DNL Experience Manager] som en [!DNL Cloud Service] [!DNL Assets] dokumentation](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/assets/overview)
+>* [[!DNL Experience Manager] som en [!DNL Cloud Service] dokumentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service)
+>* [[!DNL Experience Manager] som en [!DNL Cloud Service] [!DNL Assets] dokumentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/overview)
 >* [Så här använder du [!DNL Experience Manager] datorprogrammet](using-desktop-app.md)
 >* [Installera och uppgradera datorprogrammet](install-upgrade.md)
 >* [God praxis och felsökningstips](troubleshoot.md)
