@@ -4,9 +4,9 @@ description: Använd [!DNL Adobe Experience Manager] datorprogrammet för att ar
 mini-toc-levels: 1
 feature: Desktop App,Asset Management
 exl-id: fa19d819-231a-4a01-bfd2-6bba6fec2f18
-source-git-commit: f519cb355affea9249d5f5d92c789e993f3ff67d
+source-git-commit: 19e4b92016670de20474b251cda9f2f5274dbc26
 workflow-type: tm+mt
-source-wordcount: '4060'
+source-wordcount: '4093'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Innan du börjar använda programmet bör du förstå [hur appen fungerar](relea
 
 I [!DNL Assets]-användargränssnittet i en webbläsare kan du utforska resursplatserna eller checka ut och öppna resursen för redigering i skrivbordsprogrammet. Dessa alternativ kallas [!UICONTROL Desktop Actions] och är inte aktiverade som standard. Följ de här stegen för att aktivera den.
 
-1. Klicka på ikonen [!DNL Assets] i verktygsfältet i **[!UICONTROL User]**-konsolen.
+1. Klicka på ikonen **[!UICONTROL User]** i verktygsfältet i [!DNL Assets]-konsolen.
 1. Klicka på **[!UICONTROL My Preferences]** för att visa dialogrutan **[!UICONTROL Preferences]**.
 
 1. I dialogrutan [!UICONTROL User Preferences] väljer du **[!UICONTROL Show Desktop Actions For Assets]** och klickar sedan på **[!UICONTROL Accept]**.
@@ -119,7 +119,8 @@ Du kan öppna fjärrresurserna för visning i det ursprungliga programmet. Resur
 
 Klicka på **[!UICONTROL Open]** på resursmenyn. Resursen hämtas lokalt och öppnas i det ursprungliga programmet. Kontrollera hämtningsförloppet och överföringshastigheten för stora resurser i statusfältet.
 
-<!-- ![Download progress bar for large-sized assets](assets/download_status_bar_da2.png "Download progress bar for large-sized assets")
+<!-- 
+![Download progress bar for large-sized assets](assets/download_status_bar_da2.png "Download progress bar for large-sized assets")
 -->
 
 >[!NOTE]
@@ -134,7 +135,7 @@ I vissa fall, till exempel när du monterar en resurs i ett internt dokument, ka
 
 ![Åtgärden Visa fil för en resurs](assets/revealfile_action_da2.png "Åtgärden Visa fil för en resurs")
 
-Klicka på **[!UICONTROL Reveal File]** eller **[!UICONTROL Reveal Folder]** i en mapp för att öppna Utforskaren eller Mac Finder med filen eller mappen förmarkerad på den lokala datorn. Alternativet är till exempel användbart om du vill montera [!DNL Experience Manager]-filerna i de ursprungliga programmen som har stöd för montering eller länkning av lokala filer. Mer information om hur du monterar filer i Adobe InDesign finns i [Montera bilder](https://helpx.adobe.com/se/indesign/using/placing-graphics.html).
+Klicka på **[!UICONTROL Reveal File]** eller **[!UICONTROL Reveal Folder]** i en mapp för att öppna Utforskaren eller Mac Finder med filen eller mappen förmarkerad på den lokala datorn. Alternativet är till exempel användbart om du vill montera [!DNL Experience Manager]-filerna i de ursprungliga programmen som har stöd för montering eller länkning av lokala filer. Mer information om hur du monterar filer i Adobe InDesign finns i [Montera bilder](https://helpx.adobe.com/indesign/using/placing-graphics.html).
 
 Åtgärden **[!UICONTROL Reveal File]** öppnar en lokal nätverksresurs. Endast de resurser som är tillgängliga lokalt visas. Det innebär att resurser som har visats, hämtats eller öppnats/redigerats med appen visas. Den lokala nätverksresursen överför inga ändringar till [!DNL Experience Manager]. Använd **[!UICONTROL Upload Changes]**- eller **[!UICONTROL Upload]**-åtgärderna i appen explicit för att överföra ändringarna.
 
@@ -157,7 +158,7 @@ Använd **[!UICONTROL Toggle Check-out]** för att låsa resursen för att förh
 * Du har börjat redigera en resurs utan att först checka ut den (till exempel genom att öppna den).
 * Du har för avsikt att börja redigera en resurs inom kort och vill inte att andra ska kunna redigera den.
 
-När du är klar med redigeringarna visas statusen **[!UICONTROL Edited Locally]** för de ändrade resurserna. Alla ändringar som har sparats i resurserna är bara lokala tills du överför ändringarna till [!DNL Experience Manager]. Om du vill överföra en enskild resurs eller ett fåtal resurser klickar du på **[!UICONTROL Upload Changes]** bland alternativen för en resurs. Den skapar en version av resursen i [!DNL Experience Manager]. Med webbgränssnittet för [!DNL Assets] kan du se resurshistorik i [tidslinjevyn](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/assets/using/activity-stream).
+När du är klar med redigeringarna visas statusen **[!UICONTROL Edited Locally]** för de ändrade resurserna. Alla ändringar som har sparats i resurserna är bara lokala tills du överför ändringarna till [!DNL Experience Manager]. Om du vill överföra en enskild resurs eller ett fåtal resurser klickar du på **[!UICONTROL Upload Changes]** bland alternativen för en resurs. Den skapar en version av resursen i [!DNL Experience Manager]. Med webbgränssnittet för [!DNL Assets] kan du se resurshistorik i [tidslinjevyn](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/using/activity-stream).
 
 ![Alternativet Överför ändringar i appen](assets/upload_changes_single1_da2.png "alternativet Överför ändringar i appen")
 
@@ -175,9 +176,10 @@ Om det behövs kan du växla utcheckning. Den uppdaterade resursen tas bort frå
 
 ## Överför och lägg till nya resurser till [!DNL Experience Manager] {#upload-and-add-new-assets-to-aem}
 
-Användare kan lägga till nya resurser i DAM-databasen. Du kan till exempel vara fotograf eller entreprenör på en byrå som vill lägga till ett stort antal foton från en fotografering i [!DNL Experience Manager]-databasen. Om du vill lägga till nytt innehåll i [!DNL Experience Manager] väljer du ![alternativet &#x200B;](assets/do-not-localize/upload_to_cloud_da2.png) för överföring till molnet i appens övre fält. Bläddra till resursfilerna i det lokala filsystemet och klicka på **[!UICONTROL Select]**. Du kan också överföra resurser genom att dra filerna eller mapparna i programgränssnittet. I Windows överförs resurserna till mappen om du drar resurser till en mapp i appen. Om det tar längre tid att överföra visas en förloppsindikator.
+Användare kan lägga till nya resurser i DAM-databasen. Du kan till exempel vara fotograf eller entreprenör på en byrå som vill lägga till ett stort antal foton från en fotografering i [!DNL Experience Manager]-databasen. Om du vill lägga till nytt innehåll i [!DNL Experience Manager] väljer du ![alternativet ](assets/do-not-localize/upload_to_cloud_da2.png) för överföring till molnet i appens övre fält. Bläddra till resursfilerna i det lokala filsystemet och klicka på **[!UICONTROL Select]**. Du kan också överföra resurser genom att dra filerna eller mapparna i programgränssnittet. I Windows överförs resurserna till mappen om du drar resurser till en mapp i appen. Om det tar längre tid att överföra visas en förloppsindikator.
 
-<!-- ![Download progress bar for large-sized assets](assets/upload_status_da2.png "Download progress bar for large-sized assets")
+<!-- 
+![Download progress bar for large-sized assets](assets/upload_status_da2.png "Download progress bar for large-sized assets")
 -->
 
 Du kan överföra mappar eller enskilda filer från det lokala filsystemet. En mapps hierarki bevaras när den överförs. Se [Massöverföring](#bulk-upload-assets) innan du överför resurser i grupp.
@@ -200,7 +202,8 @@ I det äldre programmet bevarade de nodnamn som skapades i databasen utrymmet oc
 >
 >Programmet ändrar bara nodnamnen i databasen med följande namnkonventioner. Appen behåller resursens `Title` som den är.
 
-<!-- TBD: Do NOT use this table.
+<!-- 
+TBD: Do NOT use this table.
 
 | Where do characters occur | Characters | Legacy preference | Renaming convention | Example |
 |---|---|---|---|---|
@@ -224,13 +227,15 @@ I det äldre programmet bevarade de nodnamn som skapades i databasen utrymmet oc
 
 ‡ Teckenlistan är en blankstegsavgränsad lista.
 
-<!-- TBD: Check if the following is to be included in the footnote.
+<!-- 
+TBD: Check if the following is to be included in the footnote.
 
 Do not use &#92;&#92; in the names of files and &#92;&#116; &#38; in the names of folders. 
 -->
 
 
-<!-- TBD: Securing the below presentation of the same content in a comment.
+<!-- 
+TBD: Securing the below presentation of the same content in a comment.
 
 **File names**
 
@@ -293,11 +298,11 @@ Användare eller organisationer, som fotografer och byråer, kan skapa olika res
 
 ![Ladda upp flera lokala mappar från skrivbordet i [!DNL Experience Manager]](assets/upload_local_folders_da2.png "Ladda upp flera lokala mappar från skrivbordet till Experience Manager i grupp")
 
-Om de förväntade ändringarna inte visas i appen klickar du på uppdateringsikonen ![Uppdatera &#x200B;](assets/do-not-localize/refresh.png) när du har överfört filen.
+Om de förväntade ändringarna inte visas i appen klickar du på uppdateringsikonen ![Uppdatera ](assets/do-not-localize/refresh.png) när du har överfört filen.
 
 >[!NOTE]
 >
->Använd inte överföringsfunktionalitet för att migrera resurser över två [!DNL Experience Manager]-distributioner. Se i stället [migreringsguiden](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/assets/administer/assets-migration-guide).
+>Använd inte överföringsfunktionalitet för att migrera resurser över två [!DNL Experience Manager]-distributioner. Se i stället [migreringsguiden](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/assets-migration-guide).
 
 ### Lista över överförda tillgångar {#list-of-transferred-assets}
 
@@ -366,7 +371,7 @@ Mer information om begränsningarna i det här arbetsflödet finns i [systemkrav
 
 Så här provar du arbetsflödet med en bildresurs och InDesign:
 
-1. Använd en INDD-fil med placerade resurser i [!DNL Experience Manager]. Mer information om hur du skapar en sådan INDD-fil finns i [Placera grafik](https://helpx.adobe.com/se/indesign/using/placing-graphics.html).
+1. Använd en INDD-fil med placerade resurser i [!DNL Experience Manager]. Mer information om hur du skapar en sådan INDD-fil finns i [Placera grafik](https://helpx.adobe.com/indesign/using/placing-graphics.html).
 1. I skrivbordsappen **[!UICONTROL Edit]** den INDD-fil som innehåller placerade resurser i [!DNL Experience Manager].
 1. Programmet hämtar InDesign-filen och de länkade resurserna. När InDesign öppnar dokumentet är länkarna lösta, resurserna hämtas och resurserna visas i InDesign-dokumentet.
 1. Om du vill montera en ny bild i InDesign-filen använder du åtgärden **[!UICONTROL Reveal File]** för resursen. Åtgärden hämtar resursen lokalt och öppnar den lokala nätverksresursplatsen i Utforskaren eller Mac Finder.

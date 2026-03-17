@@ -3,9 +3,9 @@ title: Överför resurser med  [!DNL Experience Manager] datorprogrammet
 description: Överför resurser med  [!DNL Adobe Experience Manager] datorprogrammet.
 feature: Desktop App,Asset Management
 exl-id: f082c712-dc04-4bed-bac8-fa78f93de1c7
-source-git-commit: db592420ded4d2f7288982a1ea17618484c82537
+source-git-commit: 19e4b92016670de20474b251cda9f2f5274dbc26
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '841'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Använd **[!UICONTROL Toggle Check-out]** för att låsa resursen för att förh
 * Du har börjat redigera en resurs utan att först checka ut den (till exempel genom att öppna den).
 * Du har för avsikt att börja redigera en resurs inom kort och vill inte att andra ska kunna redigera den.
 
-När du är klar med redigeringarna visas statusen **[!UICONTROL Edited Locally]** för de ändrade resurserna. Alla ändringar som har sparats i resurserna är bara lokala tills du överför ändringarna till [!DNL Experience Manager]. Om du vill överföra en enskild resurs eller ett fåtal resurser klickar du på **[!UICONTROL Upload Changes]** bland alternativen för en resurs. Den skapar en version av resursen i [!DNL Experience Manager]. Med webbgränssnittet för [!DNL Assets] kan du se resurshistorik i [tidslinjevyn](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/assets/using/activity-stream).
+När du är klar med redigeringarna visas statusen **[!UICONTROL Edited Locally]** för de ändrade resurserna. Alla ändringar som har sparats i resurserna är bara lokala tills du överför ändringarna till [!DNL Experience Manager]. Om du vill överföra en enskild resurs eller ett fåtal resurser klickar du på **[!UICONTROL Upload Changes]** bland alternativen för en resurs. Den skapar en version av resursen i [!DNL Experience Manager]. Med webbgränssnittet för [!DNL Assets] kan du se resurshistorik i [tidslinjevyn](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/using/activity-stream).
 
 ![Alternativet Överför ändringar i appen](assets/upload_changes_single1_da2.png "alternativet Överför ändringar i appen")
 
@@ -43,9 +43,10 @@ Om det behövs kan du växla utcheckning. Den uppdaterade resursen tas bort frå
 
 ## Överför och lägg till nya resurser till [!DNL Experience Manager] {#upload-and-add-new-assets-to-aem}
 
-Användare kan lägga till nya resurser i DAM-databasen. Du kan till exempel vara fotograf eller entreprenör på en byrå som vill lägga till ett stort antal foton från en fotografering i [!DNL Experience Manager]-databasen. Om du vill lägga till nytt innehåll i [!DNL Experience Manager] väljer du ![alternativet &#x200B;](assets/do-not-localize/upload_to_cloud_da2.png) för överföring till molnet i appens övre fält. Bläddra till resursfilerna i det lokala filsystemet och klicka på **[!UICONTROL Select]**. Du kan också överföra resurser genom att dra filerna eller mapparna i programgränssnittet. I Windows överförs resurserna till mappen om du drar resurser till en mapp i appen. Om det tar längre tid att överföra visas en förloppsindikator.
+Användare kan lägga till nya resurser i DAM-databasen. Du kan till exempel vara fotograf eller entreprenör på en byrå som vill lägga till ett stort antal foton från en fotografering i [!DNL Experience Manager]-databasen. Om du vill lägga till nytt innehåll i [!DNL Experience Manager] väljer du ![alternativet ](assets/do-not-localize/upload_to_cloud_da2.png) för överföring till molnet i appens övre fält. Bläddra till resursfilerna i det lokala filsystemet och klicka på **[!UICONTROL Select]**. Du kan också överföra resurser genom att dra filerna eller mapparna i programgränssnittet. I Windows överförs resurserna till mappen om du drar resurser till en mapp i appen. Om det tar längre tid att överföra visas en förloppsindikator.
 
-<!-- ![Download progress bar for large-sized assets](assets/upload_status_da2.png "Download progress bar for large-sized assets")
+<!-- 
+![Download progress bar for large-sized assets](assets/upload_status_da2.png "Download progress bar for large-sized assets")
 -->
 
 Du kan överföra mappar eller enskilda filer från det lokala filsystemet. En mapps hierarki bevaras när den överförs. Se [Massöverföring](#bulk-upload-assets) innan du överför resurser i grupp.
@@ -66,22 +67,22 @@ Användare eller organisationer, som fotografer och byråer, kan skapa olika res
 
 ![Ladda upp flera lokala mappar från skrivbordet i [!DNL Experience Manager]](assets/upload_local_folders_da2.png "Ladda upp flera lokala mappar från skrivbordet till Experience Manager i grupp")
 
-Om de förväntade ändringarna inte visas i appen klickar du på uppdateringsikonen ![Uppdatera &#x200B;](assets/do-not-localize/refresh.png) när du har överfört filen.
+Om de förväntade ändringarna inte visas i appen klickar du på uppdateringsikonen ![Uppdatera ](assets/do-not-localize/refresh.png) när du har överfört filen.
 
 >[!NOTE]
 >
->Använd inte överföringsfunktionalitet för att migrera resurser över två [!DNL Experience Manager]-distributioner. Se i stället [migreringsguiden](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/assets/administer/assets-migration-guide).
+>Använd inte överföringsfunktionalitet för att migrera resurser över två [!DNL Experience Manager]-distributioner. Se i stället [migreringsguiden](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/assets-migration-guide).
 
 ## Nästa steg {#next-steps}
 
-* [Titta på en video för att komma igång med Adobe Experience Manager-datorprogrammet](https://experienceleague.adobe.com/sv/docs/experience-manager-learn/assets/creative-workflows/aem-desktop-app)
+* [Se en video för att komma igång med Adobe Experience Manager datorprogram](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/creative-workflows/aem-desktop-app)
 
 * Ge feedback om dokumentationen med [!UICONTROL Edit this page] ![redigera sidan](assets/do-not-localize/edit-page.png) eller [!UICONTROL Log an issue] ![skapa ett GitHub-problem](assets/do-not-localize/github-issue.png) som är tillgängligt på den högra sidopanelen
 
-* Kontakta [kundtjänst](https://experienceleague.adobe.com/sv?support-solution=General#support)
+* Kontakta [kundtjänst](https://experienceleague.adobe.com/?support-solution=General#support)
 
 >[!MORELIKETHIS]
 >
 >* [Hämta resurser](/help/using/download-assets.md)
 >* [Förstå användargränssnittet](/help/using/user-interface.md)
->* [Sökning](/help/using/search.md)
+>* [Sök](/help/using/search.md)

@@ -3,9 +3,9 @@ title: Använd  [!DNL Experience Manager] datorprogrammet version 1.10.
 description: Lär dig hur du använder Adobe Experience Manager-datorprogram version 1.10 och optimerar ditt arbete med resurser på datorn.
 feature: Desktop App,Asset Management
 exl-id: 2fdc1c8d-b822-4cca-ad06-bd875a00aa6d
-source-git-commit: 5676e7ece8bb43f051dae72d17e15ab1c34caefc
+source-git-commit: 19e4b92016670de20474b251cda9f2f5274dbc26
 workflow-type: tm+mt
-source-wordcount: '2329'
+source-wordcount: '2358'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Med appen är resurserna i [!DNL Experience Manager] enkelt tillgängliga på ditt lokala skrivbord och kan användas i alla skrivbordsprogram. Assets kan enkelt visas i Mac Finder eller Utforskaren i Windows, öppnas i skrivbordsprogram och ändras lokalt - ändringarna sparas i [!DNL Experience Manager] med en ny version som skapas i databasen.
 
-Integreringen möjliggör centraliserad resurshantering och åtkomst mellan Creative Cloud och andra applikationer, vilket säkerställer överensstämmelse med branding och andra standarder.
+Integreringen möjliggör centraliserad resurshantering och åtkomst mellan Creative Cloud och andra program, vilket säkerställer överensstämmelse med branding och andra standarder.
 
 De viktigaste uppgifterna du utför när du använder [!DNL Experience Manager]-datorprogrammet v1 är:
 
@@ -54,7 +54,7 @@ Skrivbordsappen [!DNL Experience Manager] använder en HTTPS-anslutning för att
 
 ### Installera programmet {#installapp}
 
-Kontrollera att appen har stöd för din version av Experience Manager-servern för att kunna använda datorprogrammet Experience Manager. Hämta lämplig installationsfil (binär) för ditt operativsystem (Mac eller Windows) och installera programmet.
+Kontrollera att appen har stöd för din version av Experience Manager-servern för att använda Experience Manager-datorprogrammet. Hämta lämplig installationsfil (binär) för ditt operativsystem (Mac eller Windows) och installera programmet.
 
 Det kan vara nödvändigt att göra en detaljerad konfiguration beroende på ditt nätverk och dina systeminställningar. Mer information finns i [Installera och konfigurera [!DNL Experience Manager] skrivbordsappen](install-configure-app-v1.md).
 
@@ -87,7 +87,7 @@ Appen stöder proxykonfiguration i Mac och Windows. Konfigurationen läses när 
 
 1. Starta skrivbordsappen [!DNL Experience Manager]. Om du vill mappa din [!DNL Experience Manager]-instans med appen anger du [!DNL Experience Manager]-servern i formatet `https://[aem-server-url]:[port]`.
 
-   ![Autentisera på Mac och ange [!DNL Experience Manager] server-URL &#x200B;](assets/aem_desktop_app_server_url.png)
+   ![Autentisera på Mac och ange [!DNL Experience Manager] server-URL ](assets/aem_desktop_app_server_url.png)
 
 1. Ange användarnamn och lösenord för instansen på inloggningsskärmen. Om du vill ange en alternativ [!DNL Experience Manager]-instans markerar du alternativet **[!UICONTROL Alternate Login URL]**.
 
@@ -100,7 +100,7 @@ I Assets användargränssnitt kan du utforska resursplatserna eller checka ut oc
 1. I Assets-gränssnittet klickar/trycker du på ikonen Användare i det övre högra hörnet av verktygsfältet.
 1. Klicka på **[!UICONTROL My Preferences]** för att visa dialogrutan **[!UICONTROL Preferences]**.
 
-   Gränssnittet ![[!DNL Experience Manager] med användarinställningarna &#x200B;](assets/aem_ui_user_preferences.png)
+   Gränssnittet ![[!DNL Experience Manager] med användarinställningarna ](assets/aem_ui_user_preferences.png)
 
 1. I dialogrutan [!UICONTROL User Preferences] väljer du **[!UICONTROL Show Desktop Actions For Assets]** och klickar sedan på **[!UICONTROL Accept]**.
 
@@ -116,7 +116,7 @@ I Mac väljer du **Öppna** på snabbmenyn för att öppna en resurs via skrivbo
 
 För Adobe InDesign-filer (INDD) väljer du **[!UICONTROL Open]** på snabbmenyn. När du klickar på det här alternativet hämtar appen de länkade resurserna till ditt lokala filsystem och öppnar sedan INDD-filen i Adobe InDesign. Den här metoden ser till att nödvändiga resurser är lokalt tillgängliga när du redigerar INDD-filen.
 
-![Alternativ på snabbmenyn för att komma åt och öppna resurser med [!DNL Experience Manager] skrivbordsappen &#x200B;](assets/aem_desktopapp_mac_context_menu.png)
+![Alternativ på snabbmenyn för att komma åt och öppna resurser med [!DNL Experience Manager] skrivbordsappen ](assets/aem_desktopapp_mac_context_menu.png)
 
 *Bild: Alternativ på snabbmenyn för att komma åt och öppna resurser med [!DNL Experience Manager]-datorprogrammet.*
 
@@ -145,7 +145,7 @@ Klicka på **Visa** snabbåtgärd ![Visa ikon](assets/do-not-localize/aemassets_
 ## Förstå tillgångsstatusarna {#understand-the-asset-statuses}
 
 | ![Windows-standardprogramikon](assets/do-not-localize/win_default.png) | Appen är ansluten till servern och alla resurser synkroniseras. |
---- |--- |
+| --- |--- |
 | ![Windows inaktiverad ikon](assets/do-not-localize/win_disabled.png) | Appen startas men är inte ansluten till servern. Vissa resurser kanske väntar på synkronisering. |
 | ![Windows-filsynkroniseringsikon](assets/do-not-localize/win_sync.png) | Assets synkroniserar. Filerna överförs eller hämtas. Du kan se exakta statusvärden och pausa överföringar från fönstret Resursstatus. |
 | ![Ikon för återanslutning av Windows](assets/do-not-localize/win_refresh.png) | Appen försöker återansluta. Nätverksproblemen kan leda till att anslutningen bryts. |
@@ -156,7 +156,7 @@ Klicka på **Visa** snabbåtgärd ![Visa ikon](assets/do-not-localize/aemassets_
 
 Med [!DNL Experience Manager Assets] kan du checka ut resurser för redigering och checka in dem igen när du har gjort ändringarna. När du har checkat ut en resurs kan bara du redigera, kommentera, publicera, flytta eller ta bort resursen. När du checkar ut en resurs låses resursen och andra användare hindras från att utföra någon av dessa åtgärder. Om du vill kunna checka ut/in resurser måste du ha skrivbehörighet för dem.
 
-Det finns två sätt att checka ut resurser från webbgränssnittet [!DNL Experience Manager]. Mer information om den första metoden finns i [in- och utcheckningsfilerna från Assets-gränssnittet](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/assets/managing/check-out-and-submit-assets). Följ de här stegen för de andra metoderna för att checka ut och öppna resursen när [!DNL Experience Manager]-datorprogrammet är installerat.
+Det finns två sätt att checka ut resurser från webbgränssnittet [!DNL Experience Manager]. Mer information om den första metoden finns i [in- och utcheckningsfilerna från Assets-gränssnittet](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/check-out-and-submit-assets). Följ de här stegen för de andra metoderna för att checka ut och öppna resursen när [!DNL Experience Manager]-datorprogrammet är installerat.
 
 1. Öppna gränssnittet [!DNL Assets] och för pekaren över en mapp eller en resurs för att visa skrivbordsåtgärderna som snabbåtgärder i kortvyn.
 
@@ -185,7 +185,7 @@ Med appen kan du checka ut resursfiler för att förhindra att andra användare 
 
 1. På snabbmenyn för Mac väljer du alternativet Öppna AEM Assets-mapp för att öppna Finder.
 
-   ![Alternativ på snabbmenyn för att komma åt och öppna resurser med [!DNL Experience Manager] skrivbordsappen &#x200B;](assets/aem_desktopapp_mac_context_menu.png)
+   ![Alternativ på snabbmenyn för att komma åt och öppna resurser med [!DNL Experience Manager] skrivbordsappen ](assets/aem_desktopapp_mac_context_menu.png)
 
    *Bild: Alternativ på snabbmenyn för att komma åt och öppna resurser med [!DNL Experience Manager]-datorprogrammet.*
 

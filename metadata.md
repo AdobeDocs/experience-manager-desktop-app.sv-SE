@@ -3,12 +3,12 @@ cloud: Experience Cloud
 solution: Experience Manager, Experience Manager Assets
 type: Documentation
 mini-toc-levels: 1
-git-repo: https://github.com/AdobeDocs/experience-manager-desktop-app.sv-SE
-index: y
+git-repo: https://github.com/AdobeDocs/experience-manager-desktop-app.en
+index: true
 recommendations: noDisplay
-source-git-commit: ba980c1a1bad4a9627fc28ac7f6619b644fb1f04
+source-git-commit: 19e4b92016670de20474b251cda9f2f5274dbc26
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '156'
 ht-degree: 0%
 
 ---
