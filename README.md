@@ -7,4 +7,4 @@ ht-degree: 0%
 ---
 # ARKIVERAD
 
-Den här rapporten har migrerats till <https://github.com/Adobe-Enterprise-Docs/experience-manager-desktop-app.en>
+Den här rapporten har migrerats till <https://github.com/Adobe-Enterprise-Docs/experience-manager-desktop-app.sv-SE>
